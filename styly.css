@@ -3,3 +3,46 @@
     margin: 0;
     padding: 0;
 }
+
+.test{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+/*
+.test *{
+    border: 1px solid red;
+    text-align: center;
+}
+*/
+
+.test .item-1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.test .item-2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.test .item-3{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.test .item-4{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.test .item-5{
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+
+.test .item-6{
+    grid-column-start: 6;
+    grid-row-start: 6;
+}
