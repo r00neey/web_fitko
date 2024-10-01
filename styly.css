@@ -1,6 +1,6 @@
 *{
     /*outline: 1px dashed blue;*/
-    outline: 1px dashed blue;
+    outline: 1px dashed antiquewhite;
     box-sizing: border-box;
     margin: 0;
 }
@@ -43,12 +43,3 @@ nav ul li:first-child{
     background-color: var(--color--tertiary);
     color: var(--color--primary);
 }
-
-/*
-.test {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-}
-*/
-
