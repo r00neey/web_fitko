@@ -1,8 +1,8 @@
 *{
     /*outline: 1px dashed blue;*/
-    outline: 1px dashed antiquewhite;
     box-sizing: border-box;
     margin: 0;
+    line-height: 1.5;
 }
 
 :root{
@@ -42,4 +42,45 @@ nav ul li:first-child{
     border-radius: 1em;
     background-color: var(--color--tertiary);
     color: var(--color--primary);
+}
+
+.subgrid{
+    background-image: url("https://placehold.co/1800x600");
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header header header header header header header header header header ."
+    ". main main main main . . . . . . ."
+    ". text-popis text-popis text-popis . . . . . . . ."
+    ". . . . . . . . . hours hours hours";
+    color: black;
+    border-radius: 2em;
+}
+
+.subgrid-header{
+    grid-area: header;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 800;
+    color: var(--color--secondary);
+    transform: scaleY(2);
+}
+
+.subgrid-text-main{
+    grid-area: main;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subgrid-text-second{
+    grid-area: text-popis;
+}
+
+.subgrid-hours{
+    grid-area: hours;
+    text-align: center;
+    padding: 1em;
+    background-color: grey;
+    border-radius: 1em;
 }
