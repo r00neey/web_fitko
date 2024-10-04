@@ -44,6 +44,12 @@ nav ul li:first-child{
     color: var(--color--primary);
 }
 
+nav ul li a:hover{
+    color: var(--color--primary);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
 .subgrid{
     background-image: url("https://placehold.co/1800x600");
     display: grid;
@@ -64,7 +70,7 @@ nav ul li:first-child{
     font-size: 6em;
     font-weight: 800;
     color: var(--color--secondary);
-    transform: scaleY(2);
+    /*transform: scaleY(2);*/
 }
 
 .subgrid-text-main{
@@ -80,7 +86,8 @@ nav ul li:first-child{
 .subgrid-hours{
     grid-area: hours;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
+    width: 66.666%;
     background-color: grey;
     border-radius: 1em;
 }
