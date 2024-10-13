@@ -1,5 +1,5 @@
 *{
-    outline: 1px dashed blue;
+    /*outline: 1px dashed blue;*/
     box-sizing: border-box;
     margin: 0;
     line-height: 1.5;
@@ -50,6 +50,11 @@ nav ul li a:hover{
     transition: ease-in-out 0.5s;
 }
 
+.main-grid{
+    display: grid;
+    gap: 5em;
+}
+
 .subgrid{
     background-image: url("https://placehold.co/1800x600");
     display: grid;
@@ -77,6 +82,8 @@ nav ul li a:hover{
     grid-area: main;
     font-size: 2em;
     font-weight: bold;
+    /*color: var(--color--primary);*/
+    color: blue;
 }
 
 .subgrid-text-second{
@@ -90,4 +97,24 @@ nav ul li a:hover{
     width: 66.666%;
     background-color: grey;
     border-radius: 1em;
+}
+
+.sekce-nadpis{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.sekce-nadpis h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.sekce-nadpis h2:nth-child(2){
+    font-size: 1.5em;
+    background-color: var(--color--primary);
+    color: var(--color--background);
+    padding: 0.250em 15em 0.250em 1em;
+    border-radius: 0.5em;
 }
