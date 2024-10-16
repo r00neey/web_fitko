@@ -1,5 +1,5 @@
 *{
-    outline: 1px dashed blue;
+    /*outline: 1px dashed blue;*/
     box-sizing: border-box;
     margin: 0;
     line-height: 1.5;
@@ -121,3 +121,4 @@ nav ul li a:hover{
     padding: 0.5em;
     width: 60%;
 }
+
