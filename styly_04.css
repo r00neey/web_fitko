@@ -35,6 +35,7 @@
     background-color: var(--color--tertiary);
     color: var(--color--primary);
     border: none;
+    cursor:pointer;
 }
 
 .button-wrapper{
