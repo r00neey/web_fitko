@@ -50,60 +50,6 @@ nav ul li a:hover{
     transition: ease-in-out 0.5s;
 }
 
-.main-grid{
-    display: grid;
-    gap: 5em;
-}
-
-.subgrid{
-    /*background-image: url("https://placehold.co/1800x600");*/
-    /*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("obrazky_provizorni/uvodni_foto.webp");*/
-    background-image: url("obrazky_provizorni/uvodni_foto.webp");
-    background-size:cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    ". header header header header header header header header header header ."
-    ". main main main main . . . . . . ."
-    ". text-popis text-popis text-popis . . . . . . . ."
-    ". . . . . . . . . . hours hours";
-    color: black;
-    border-radius: 2em;
-}
-
-.subgrid-header{
-    grid-area: header;
-    text-align: center;
-    font-size: 6em;
-    font-weight: 800;
-    color: var(--color--secondary);
-    /*zvysi text*/
-    /*transform: scaleY(2);*/
-}
-
-.subgrid-text-main{
-    grid-area: main;
-    font-size: 2em;
-    font-weight: 900;
-    /*color: var(--color--primary);*/
-    color: blue;
-}
-
-.subgrid-text-second{
-    grid-area: text-popis;
-}
-
-.subgrid-hours{
-    grid-area: hours;
-    text-align: center;
-    padding: 0.5em;
-    margin: 1em;
-    background-color: rgb(217, 217, 217);
-    border-radius: 1em;
-}
-
 .sekce-nadpis{
     display: flex;
     align-items: center;
@@ -124,4 +70,60 @@ nav ul li a:hover{
     color: var(--color--background);
     padding: 0.5em;
     width: 60%;
+}
+
+.obrazek-uvod{
+    width: 100%;
+    height: auto;
+    border-radius: 2em;
+    margin: 2em 0;
+}
+
+.uvod{
+    color: red;
+}
+
+.uvod .uvod-grid{
+    background-image: url("obrazky_provizorni/uvodni_foto.webp");
+    height: 80vh;
+    display: grid;
+    background-position: center;
+    border-radius: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". nazev ."
+        "text-hlavni . ."
+        "text-vedlejsi . ."
+        ". . oteviraci-doba";
+}
+
+.uvod .uvod-grid > *{
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    text-align: center;
+}
+
+.uvod .uvod-grid h1{
+    grid-area: nazev;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.uvod .uvod-grid .text-hlavni{
+    grid-area: text-hlavni;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.uvod .uvod-grid .text-vedlejsi{
+    grid-area: text-vedlejsi;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.uvod .uvod-grid .oteviraci-doba{
+    grid-area: oteviraci-doba;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 2em;
 }
