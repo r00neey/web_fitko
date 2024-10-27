@@ -8,8 +8,8 @@
 
 .card{
     background-image: url("https://placehold.co/500x800");
-    width: 500px;
-    height: 800px;
+    width: 33%;
+    height: auto;
     border-radius: 2em;
     padding: 2em;
 }
