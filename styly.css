@@ -72,41 +72,33 @@ nav ul li a:hover{
     width: 60%;
 }
 
-.obrazek-uvod{
-    width: 100%;
-    height: auto;
-    border-radius: 2em;
-    margin: 2em 0;
-}
-
-.uvod{
-    color: red;
-}
 
 .uvod .uvod-grid{
+    margin: 4em 0;
     background-image: url("obrazky_provizorni/uvodni_foto.webp");
     height: 80vh;
     display: grid;
     background-position: center;
     border-radius: 2em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        ". nazev ."
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "nazev nazev nazev"
         "text-hlavni . ."
         "text-vedlejsi . ."
         ". . oteviraci-doba";
 }
 
 .uvod .uvod-grid > *{
-    /*background-color: rgba(0, 0, 0, 0.5);*/
     text-align: center;
 }
 
 .uvod .uvod-grid h1{
     grid-area: nazev;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 6em;
+    font-weight: 900;
+    margin-top: -0.75em;
+    color: var(--color--secondary);
 }
 
 .uvod .uvod-grid .text-hlavni{
