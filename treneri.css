@@ -1,31 +1,22 @@
 .treneri .treneri-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
 }
 
-.treneri .treneri-cards .card{
-
-}
-
-.treneri .treneri-cards .card .name, .treneri .treneri-cards .card .popisek{
-    color: blue;
+.treneri .treneri-cards .card .name{
     position: absolute;
     font-weight: bold;
     font-size: 1.5em;
-
 }
 
 .treneri .treneri-cards .card .name{
     padding: 2em;
 }
-.treneri .treneri-cards .card .popisek{
-    padding: 4em 2em;
-}
 
 .treneri .treneri-cards img{
-    width: 30vw;
+    width: 25vw;
     height: auto;
     border-radius: 2em;
 }
