@@ -6,17 +6,16 @@
     <title>Document</title>
   </head>
   <style>
-    .item-3,
-    .item-4 {
+    .item {
       display: none;
     }
   </style>
   <body>
     <script src="main.js"></script>
-    <div class="item-1" id="item-1"><p>cau1</p></div>
-    <div class="item-2" id="item-2"><p>cau2</p></div>
-    <div class="item-3" id="item-3"><p>cau3</p></div>
-    <div class="item-4" id="item-4"><p>cau4</p></div>
-    <button onclick="show_divs()">Show All Items</button>
+    <div class="item" id="item-1"><p>cau1</p></div>
+    <div class="item" id="item-2"><p>cau2</p></div>
+    <div class="item-hidden" id="item-3"><p>cau3</p></div>
+    <div class="item-hidden" id="item-4"><p>cau4</p></div>
+    <button onclick="toggle_divs()">Toggle Items</button>
   </body>
 </html>

@@ -21,6 +21,7 @@
     <!-- mozna spis dat lokalne -->
   </head>
   <body>
+    <script src="main.js"></script>
     <header>
       <nav>
         <ul>
@@ -171,37 +172,39 @@
               <div class="name">Monika</div>
               <img src="fotky-treneri/monika.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Zuzka</div>
               <img src="fotky-treneri/zuzka.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Jana</div>
               <img src="fotky-treneri/jana.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Monča</div>
               <img src="fotky-treneri/monca.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Lucka</div>
               <img src="fotky-treneri/lucka.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Mára</div>
               <img src="fotky-treneri/mara.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Kristý</div>
               <img src="fotky-treneri/kristy.jpeg" alt="Kartička trenéra" />
             </div>
-            <div class="card">
+            <div class="card hidden">
               <div class="name">Petra</div>
               <img src="fotky-treneri/petra.jpeg" alt="Kartička trenéra" />
             </div>
           </div>
           <div class="button-wrapper">
-            <button class="treneri-button">DALŠÍ TRENÉŘI</button>
+            <button class="treneri-button" onclick="toggle_divs()">
+              DALŠÍ TRENÉŘI
+            </button>
           </div>
         </section>
         <section class="navsteva">
