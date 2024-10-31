@@ -1,0 +1,64 @@
+.cenik .grid-cenik{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cenik-text cenik-tabulka"
+    "cenik-text2 cenik-tabulka"
+    "cenik-podpis cenik-tabulka";
+}
+
+.cenik .cenik-text{
+    grid-area: cenik-text;
+}
+
+.cenik .cenik-text2{
+    grid-area: cenik-text2;
+}
+
+.cenik .cenik-podpis{
+    grid-area: cenik-podpis;
+}
+
+.cenik .cenik-tabulka{
+    grid-area: cenik-tabulka;
+    background-color: white;
+    border-radius: 2em;
+    color: black;
+    padding: 2em;
+}
+
+.cenik-tabulka h2{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.cenik-tabulka .tabulka-grid{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+    "tabulka tabulka-obrazek"
+    "tabulka-popisek tabulka-popisek";
+}
+
+.cenik-tabulka .tabulka{
+    grid-area: tabulka;
+    border: 1px solid red;
+}
+
+.cenik-tabulka .tabulka-obrazek{
+    grid-area: tabulka-obrazek;
+    border: 1px solid green;
+}
+
+.cenik-tabulka .tabulka-obrazek{
+    width: 100%;
+}
+
+.cenik-tabulka .tabulka-popisek{
+    grid-area: tabulka-popisek;
+    border: 1px solid yellow;
+}
