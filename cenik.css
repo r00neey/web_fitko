@@ -25,7 +25,6 @@
     background-color: white;
     border-radius: 2em;
     color: black;
-    padding: 2em;
 }
 
 .cenik-tabulka h2{
@@ -55,7 +54,6 @@
 }
 
 .cenik-tabulka .tabulka-obrazek{
-    width: 100%;
 }
 
 .cenik-tabulka .tabulka-popisek{
