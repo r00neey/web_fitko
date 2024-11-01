@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="treneri.css" />
     <link rel="stylesheet" href="styly_footer.css" />
     <link rel="stylesheet" href="o-nas.css" />
+    <link rel="stylesheet" href="nase-sluzby.css" />
+    <link rel="stylesheet" href="cenik.css" />
 
     <!-- fonty -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +22,7 @@
     <!-- mozna spis dat lokalne -->
   </head>
   <body>
+    <script src="main.js"></script>
     <header>
       <nav>
         <ul>
@@ -48,12 +51,6 @@
               <p>SO-NE: 9:00-20:00</p>
             </div>
           </div>
-          <!--
-          <img
-            class="obrazek-uvod"
-            src="obrazky_provizorni/uvodni_foto.webp"
-            alt="úvodní fotka"
-          />-->
         </div>
         <section class="o-nas">
           <div class="sekce-nadpis">
@@ -94,24 +91,107 @@
             <h2>02</h2>
             <h2>NAŠE SLUŽBY</h2>
           </div>
+          <ul class="nav">
+            <li><a href="#">FITNESS</a></li>
+            <li><a href="#">SKUPINOVÉ LEKCE</a></li>
+            <li><a href="#">PILATES</a></li>
+            <li><a href="#">JÓGA</a></li>
+            <li><a href="#">MASÁŽE</a></li>
+          </ul>
+          <div class="obrazky">
+            <div class="obrazky-card">
+              <p>Random text</p>
+              <img
+                src="obrazky_provizorni/placeholder-card.png"
+                alt="Placeholder"
+                class="img-1"
+              />
+            </div>
+            <div class="obrazky-card">
+              <p>Random text</p>
+              <img
+                src="obrazky_provizorni/placeholder-card.png"
+                alt="Placeholder"
+                class="img-2"
+              />
+            </div>
+          </div>
         </section>
         <section class="cenik">
           <div class="sekce-nadpis">
             <h2>03</h2>
             <h2>CENÍK</h2>
           </div>
-          <p>
-            V našem fitku věříme, že kvalitní fitness služby by měly být
-            dostupné všem. Proto nabízíme férové a transparentní ceny, které
-            odpovídají hodnotě našich služeb. Bez skrytých poplatků a
-            nepříjemných překvapení - platíte pouze za to, co skutečně
-            dostanete. Naše cenové plány jsou flexibilní a navrženy tak, aby
-            vyhovovaly různým potřebám a rozpočtům.
-          </p>
-          <p>
-            "Přijďte se přesvědčit sami a zažijte skvělou atmosféru a
-            profesionální přístup za férovou cenu!"
-          </p>
+          <div class="grid-cenik">
+            <p class="cenik-text">
+              V našem fitku věříme, že kvalitní fitness služby by měly být
+              dostupné všem. Proto nabízíme férové a transparentní ceny, které
+              odpovídají hodnotě našich služeb. Bez skrytých poplatků a
+              nepříjemných překvapení - platíte pouze za to, co skutečně
+              dostanete. Naše cenové plány jsou flexibilní a navrženy tak, aby
+              vyhovovaly různým potřebám a rozpočtům.
+            </p>
+            <p class="cenik-text2">
+              "Přijďte se přesvědčit sami a zažijte skvělou atmosféru a
+              profesionální přístup za férovou cenu!"
+            </p>
+            <div class="cenik-tabulka">
+              <h2>FITKO</h2>
+              <div class="tabulka-grid">
+                <table class="tabulka">
+                  <tbody>
+                    <tr>
+                      <th>JEDNORÁZOVÝ</th>
+                      <td>250 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>TÝDENNÍ</th>
+                      <td>1000 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>MĚSÍČNÍ</th>
+                      <td>2000 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>POLOLETNÍ</th>
+                      <td>10000 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>ROČNÍ</th>
+                      <td>15000 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>5 VSTUPŮ</th>
+                      <td>1200 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>10 VSTUPŮ</th>
+                      <td>2000 Kč</td>
+                    </tr>
+                    <tr>
+                      <th>20 VSTUPŮ</th>
+                      <td>3500 Kč</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img
+                  src="obrazky_provizorni/placeholder-card.png"
+                  alt=""
+                  class="tabulka-obrazek"
+                />
+                <p class="tabulka-popisek">
+                  Půjčení ručníku je zdarma, v případě, že má člen naší kartičku
+                  na ručníkový servis za jednorázový poplatek 100 Kč. Je také
+                  možnost zapůjčení zámku za vratnou zálohu 200 Kč.
+                </p>
+              </div>
+            </div>
+            <img
+              src="obrazky_provizorni/placeholder-card.png"
+              alt=""
+              class="cenik-podpis"
+            />
+          </div>
         </section>
         <section class="treneri">
           <div class="sekce-nadpis">
@@ -128,56 +208,62 @@
           </p>
           <div class="treneri-cards">
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Venca</div>
+              <img src="fotky-treneri/venca.jpeg" alt="Kartička trenéra" />
             </div>
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Eva</div>
+              <img src="fotky-treneri/eva.jpeg" alt="Kartička trenéra" />
             </div>
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Péťa</div>
+              <img src="fotky-treneri/peta.jpeg" alt="Kartička trenéra" />
             </div>
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Jitka</div>
+              <img src="fotky-treneri/jitka.jpeg" alt="Kartička trenéra" />
             </div>
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Katka</div>
+              <img src="fotky-treneri/katka.jpeg" alt="Kartička trenéra" />
             </div>
             <div class="card">
-              <div class="name">Klárka</div>
-              <div class="popisek">Kondiční trenérka</div>
-              <img
-                src="obrazky_provizorni/placeholder-card.png"
-                alt="Kartička trenéra"
-              />
+              <div class="name">Monika</div>
+              <img src="fotky-treneri/monika.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Zuzka</div>
+              <img src="fotky-treneri/zuzka.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Jana</div>
+              <img src="fotky-treneri/jana.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Monča</div>
+              <img src="fotky-treneri/monca.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Lucka</div>
+              <img src="fotky-treneri/lucka.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Mára</div>
+              <img src="fotky-treneri/mara.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Kristý</div>
+              <img src="fotky-treneri/kristy.jpeg" alt="Kartička trenéra" />
+            </div>
+            <div class="card hidden">
+              <div class="name">Petra</div>
+              <img src="fotky-treneri/petra.jpeg" alt="Kartička trenéra" />
             </div>
           </div>
           <div class="button-wrapper">
-            <button class="treneri-button">DALŠÍ TRENÉŘI</button>
+            <button class="treneri-button" onclick="toggle_divs()">
+              DALŠÍ TRENÉŘI
+            </button>
           </div>
         </section>
         <section class="navsteva">

@@ -1,0 +1,52 @@
+.nase-sluzby .nav{
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+}
+
+.nase-sluzby .nav li{
+    font-size: 2em;
+    font-weight: 900;
+    padding: 2em 0;
+    color: gray;
+}
+
+.nase-sluzby .nav li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.nase-sluzby .nav li a:active{
+    color: var(--color--secondary);
+}
+
+
+.nase-sluzby .obrazky{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img-1 img-2";
+    gap: 2em;
+}   
+
+.nase-sluzby .obrazky .obrazky-card img{
+    border-radius: 2em;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+}
+
+.nase-sluzby .obrazky .obrazky-card .img-1{
+    grid-area: img-1;
+}
+.nase-sluzby .obrazky .obrazky-card .img-2{
+    grid-area: img-2;
+}
+
+.nase-sluzby .obrazky .obrazky-card p{
+    position: absolute;
+    padding: 2em 0 0 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
