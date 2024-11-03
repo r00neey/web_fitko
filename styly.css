@@ -119,3 +119,11 @@ nav ul li a:hover{
     font-weight: 900;
     padding: 2em;
 }
+
+.zvyrazneni{
+    color: var(--color--primary);
+    background-color: var(--color--secondary);
+    font-weight: bold;
+    padding: 0.25em;
+    border-radius: 0.5em;
+}

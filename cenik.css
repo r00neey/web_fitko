@@ -27,6 +27,15 @@
     color: black;
 }
 
+.cenik tr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.cenik th, .cenik td{
+    padding: 1em;
+}
+
 .cenik-tabulka h2{
     text-align: center;
     font-size: 4em;
@@ -34,29 +43,33 @@
 }
 
 .cenik-tabulka .tabulka-grid{
-    border: 1px solid blue;
+    gap: 1em;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 4fr 1fr;
     grid-template-areas:
     "tabulka tabulka-obrazek"
     "tabulka-popisek tabulka-popisek";
+    padding: 1em;
 }
 
 .cenik-tabulka .tabulka{
     grid-area: tabulka;
-    border: 1px solid red;
+    border-top: 1px solid black;
 }
 
 .cenik-tabulka .tabulka-obrazek{
     grid-area: tabulka-obrazek;
-    border: 1px solid green;
+    text-align: center;
 }
 
-.cenik-tabulka .tabulka-obrazek{
+.cenik-tabulka .tabulka-obrazek img{
+    width: 750px;
+    height: 500px;
+    border-radius: 2em;
 }
 
 .cenik-tabulka .tabulka-popisek{
     grid-area: tabulka-popisek;
-    border: 1px solid yellow;
+    padding: 1em;
 }
