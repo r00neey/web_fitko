@@ -7,4 +7,12 @@ function toggle_divs() {
             element.style.display = "block";
         }
     });
+
+    // Najít tlačítko a změnit jeho text
+    var button = document.querySelector(".treneri-button");
+    if (button.innerText === "DALŠÍ TRENÉŘI") {
+        button.innerText = "MÉNĚ TRENÉRŮ";
+    } else {
+        button.innerText = "DALŠÍ TRENÉŘI";
+    }
 }
