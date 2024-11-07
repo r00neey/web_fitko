@@ -1,3 +1,5 @@
+html{scroll-behavior: smooth;}
+
 *{
     /*outline: 1px dashed blue;*/
     box-sizing: border-box;
@@ -37,6 +39,10 @@ nav ul li{
     font-size: 1.2em;
 }
 
+nav ul li a{
+    text-decoration: none;
+}
+
 nav ul li:first-child{
     margin-right: auto;
     border-radius: 1em;
@@ -44,10 +50,16 @@ nav ul li:first-child{
     color: var(--color--primary);
 }
 
+/*TOTO BLBNE*/
 nav ul li a:hover{
     color: var(--color--primary);
     cursor: pointer;
     transition: ease-in-out 0.5s;
+}
+
+nav ul li a:visited{
+    color: var(--color--tertiary);
+    cursor: pointer;
 }
 
 .sekce-nadpis{
