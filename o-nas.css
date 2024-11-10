@@ -112,7 +112,13 @@
 
 
 .o-nas .o-nas-grid .koupit-clenstvi .obrazek-o-nas{
+    border-radius: 99em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 2em;
+    padding: 1em;
     background-color: white;
     border-radius: 99em;
+    cursor: pointer;
 }
