@@ -100,26 +100,19 @@
     border-radius: 90em;
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .o-nas .o-nas-grid .koupit-clenstvi p{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     padding: 1em;
 }
 
-.o-nas .o-nas-grid .koupit-clenstvi .sipka{
-    font-size: 2em;
-    font-weight: 900;
-    background-color: blue;
-    color: tomato;
-    background-color: white;
-    margin: 0.1em;
-    margin-right: 1em;
-}
 
-.o-nas .o-nas-grid .koupit-clenstvi .sipka span{
-    border-radius:90em;
+.o-nas .o-nas-grid .koupit-clenstvi .obrazek-o-nas{
+    margin-right: 2em;
+    background-color: white;
+    border-radius: 99em;
 }
