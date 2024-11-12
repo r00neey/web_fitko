@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumavan Fitness</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styly.css" />
-    <link rel="stylesheet" href="treneri.css" />
-    <link rel="stylesheet" href="styly_footer.css" />
-    <link rel="stylesheet" href="o-nas.css" />
-    <link rel="stylesheet" href="nase-sluzby.css" />
-    <link rel="stylesheet" href="cenik.css" />
-    <link rel="stylesheet" href="prijd_navstivit.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styly.css" />
+    <script src="javascript/main.js"></script>
 
     <!-- fonty -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +18,6 @@
     <!-- mozna spis dat lokalne -->
   </head>
   <body>
-    <script src="main.js"></script>
     <header>
       <nav>
         <ul>
@@ -48,8 +42,10 @@
               zařízením v okruhu 45km.
             </p>
             <div class="oteviraci-doba">
-              <p>PO-PÁ: 6:00-24:00</p>
-              <p>SO-NE: 9:00-20:00</p>
+              <div class="casy">
+                <p>PO-PÁ: 6:00-24:00</p>
+                <p>SO-NE: 9:00-20:00</p>
+              </div>
             </div>
           </div>
         </div>
@@ -67,26 +63,56 @@
             zdarma využít i další <span class="zvyrazneni">Služby*</span>.
           </p>
           <div class="o-nas-grid">
-            <div class="kde-se-nachazime">
-              <p class="p-padding">KDE SE NACHÁZÍME</p>
+            <div class="karta kde-se-nachazime">
+              <div class="front">
+                <h3 class="p-padding">KDE SE NACHÁZÍME</h3>
+              </div>
+              <div class="back">
+                <h3>KDE SE NACHÁZÍME</h3>
+                <p>
+                  Fitness centrum Šumavan, který se nachází jen kousek od centra
+                  Klatov s celkovou rozlohou 700m&sup2; je největším fitness
+                  zařízením v okruhu 45km.
+                </p>
+              </div>
             </div>
-            <div class="proc-zrovna-sumavan">
-              <p class="p-padding">PROČ ZROVNA ŠUMAVAN</p>
+            <div class="karta proc-zrovna-sumavan">
+              <div class="front">
+                <h3 class="p-padding">PROČ ZROVNA ŠUMAVAN</h3>
+              </div>
+              <div class="back">
+                <p>ahoj ahoj toto je proc zrovna sumavan</p>
+              </div>
             </div>
-            <div class="vybaveni">
-              <p class="p-padding">VYBAVENÍ</p>
+            <div class="karta vybaveni">
+              <div class="front">
+                <h3 class="p-padding">VYBAVENÍ</h3>
+              </div>
+              <div class="back">
+                <p>ahoj toto je back vybaveni</p>
+              </div>
             </div>
             <div class="chci-si-precist-vic">
-              <p class="">CHCI SI PŘEČÍST VÍC</p>
+              <h3 class="">CHCI SI PŘEČÍST VÍC</h3>
             </div>
-            <div class="nase-sluzby">
-              <p class="p-padding">NAŠE SLUŽBY</p>
+            <div class="karta nase-sluzby">
+              <div class="front">
+                <h3 class="p-padding">NAŠE SLUŽBY</h3>
+              </div>
+              <div class="back">
+                <p>ahoj toto je nase sluzby back</p>
+              </div>
             </div>
-            <div class="prostory">
-              <p class="p-padding">PROSTORY</p>
+            <div class="karta prostory">
+              <div class="front">
+                <h3 class="p-padding">PROSTORY</h3>
+              </div>
+              <div class="back">
+                <p>ahoj toto je prostory back</p>
+              </div>
             </div>
             <div class="koupit-clenstvi">
-              <p class="">KOUPIT ČLENSTVÍ</p>
+              <h3 class="">KOUPIT ČLENSTVÍ</h3>
               <div class="obrazek-o-nas">
                 <img
                   src="ikony/right-arrow.png"
@@ -218,8 +244,13 @@
           </p>
           <div class="treneri-cards">
             <div class="card">
-              <div class="name">Venca</div>
-              <img src="fotky-treneri/venca.jpeg" alt="Kartička trenéra" />
+              <div class="front">
+                <div class="name">Venca</div>
+                <img src="fotky-treneri/venca.jpeg" alt="Kartička trenéra" />
+              </div>
+              <div class="back">
+                <h3>Aboj</h3>
+              </div>
             </div>
             <div class="card">
               <div class="name">Eva</div>
@@ -302,9 +333,27 @@
         <p class="kontakt">Kontakt</p>
       </div>
       <div class="loga">
-        <p class="logo-fb">logo fb</p>
-        <p class="logo-ig">logo ig</p>
-        <p class="logo-x">logo x</p>
+        <img
+          src="ikony/facebook-ikona.png"
+          alt=""
+          class="logo-fb"
+          width="40"
+          height="40"
+        />
+        <img
+          src="ikony/instagram-ikona.png"
+          alt=""
+          class="logo-ig"
+          width="40"
+          height="40"
+        />
+        <img
+          src="ikony/x-ikona.png"
+          alt=""
+          class="logo-x"
+          width="40"
+          height="40"
+        />
       </div>
       <p class="sumavan">2024 &copy; Sumavan Fitness</p>
     </footer>

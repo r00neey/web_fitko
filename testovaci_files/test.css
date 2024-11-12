@@ -1,0 +1,78 @@
+.treneri .treneri-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+}
+
+.treneri .card {
+    border: 0.25em solid white;
+    border-radius: 1em;
+    width: 25vw; /* Nastavíme šířku karty */
+    height: 300px; /* Nastavíme pevnou výšku karty */
+    position: relative; /* Přidáme pozici relativní */
+    margin: 1em; /* Přidáme margin pro oddělení karet */
+    overflow: hidden; /* Zajistíme, že obsah karty nepřesáhne její hranice */
+}
+
+.treneri .treneri-cards .card .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 2em;
+}
+
+.treneri .treneri-cards img {
+    width: 100%; /* Nastavíme šířku obrázku na 100% šířky karty */
+    height: auto;
+    border-radius: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.treneri .button-wrapper {
+    padding: 1em;
+    text-align: center;
+}
+
+.treneri .treneri-button {
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/* JS */
+
+.card .front, .card .back {
+    width: 100%; /* Nastavíme šířku přední i zadní strany na 100% šířky karty */
+    height: 100%; /* Nastavíme výšku přední i zadní strany na 100% výšky karty */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    display: none;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.card.flipped .front {
+    display: none;
+}
+
+.card.flipped .back {
+    display: flex;
+}

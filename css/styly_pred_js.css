@@ -1,0 +1,548 @@
+html{scroll-behavior: smooth;}
+
+*{
+    /*outline: 1px dashed blue;*/
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.5;
+}
+
+:root{
+    --color--primary: #DEDEDE;
+    --color--secondary: #DC635A;
+    --color--tertiary: #3A3A3A;
+    --color--background: #1A1A1A;
+}
+
+body{
+    color: var(--color--primary);
+    background-color: var(--color--background);
+    font-family: montserrat, serif;
+    padding: 0 4vw;
+    line-height: 1.5;
+}
+
+.zvyrazneni{
+    color: var(--color--primary);
+    background-color: var(--color--secondary);
+    font-weight: bold;
+    padding: 0.25em;
+    border-radius: 0.5em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  UVOD  */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav{
+    padding: 2em 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    padding: 1em;
+    color: var(--color--tertiary);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+    border-radius: 1em;
+    background-color: var(--color--tertiary);
+    color: var(--color--primary);
+}
+
+/*TOTO BLBNE*/
+nav ul li a:hover{
+    color: var(--color--primary);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul li a:visited{
+    color: var(--color--tertiary);
+    cursor: pointer;
+}
+
+.sekce-nadpis{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.sekce-nadpis h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.sekce-nadpis h2:nth-child(2){
+    font-size: 1.5em;
+    font-weight: 900;
+    border-radius: 0.5em;
+    background-color: var(--color--primary);
+    color: var(--color--background);
+    padding: 0.5em;
+    width: 60%;
+}
+
+
+.uvod .uvod-grid{
+    background-image: url("../obrazky_provizorni/uvodni_foto.webp");
+    height: 80vh;
+    display: grid;
+    background-position: center;
+    border-radius: 2em;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "nazev nazev nazev"
+        "text-hlavni . ."
+        "text-vedlejsi . ."
+        ". . oteviraci-doba";
+}
+
+.uvod .uvod-grid h1{
+    grid-area: nazev;
+    font-size: 6em;
+    font-weight: 900;
+    margin-top: -0.75em;
+    color: var(--color--secondary);
+    text-align: center;
+}
+
+.uvod .uvod-grid .text-hlavni{
+    grid-area: text-hlavni;
+    font-size: 2.5em;
+    font-weight: 900;
+    padding: 2em 1em;
+}
+
+.uvod .uvod-grid .text-vedlejsi{
+    grid-area: text-vedlejsi;
+    font-size: 1.5em;
+    padding: 0 2em;
+}
+
+.uvod .uvod-grid .oteviraci-doba{
+    grid-area: oteviraci-doba;
+    font-size: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.uvod .uvod-grid .oteviraci-doba .casy{
+    background-color: var(--color--primary);
+    color: var(--color--tertiary);
+    border-radius: 2em;
+    padding: 1.25em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  01 - NECO MALO O NAS  */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.o-nas .popis{
+    font-size: 1.25em;
+}
+
+.o-nas .popis .sipka{
+    font-size: 1.5em;
+}
+
+.o-nas .o-nas-grid{
+    padding: 4em 0;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.o-nas .o-nas-grid p{
+    color: black;
+    font-size: 1.5em;
+}
+
+.o-nas .o-nas-grid div{
+    border: 1px solid red;
+    border-radius: 2em;
+}
+
+.o-nas .o-nas-grid .p-padding{
+    padding: 1em 0 0 1em;
+}
+
+.o-nas .o-nas-grid .kde-se-nachazime{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-color: blue;
+    background-image: url("../obrazky_provizorni/placeholder-card.png");
+}
+
+.o-nas .o-nas-grid .proc-zrovna-sumavan{
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: red;
+    background-image: url("../obrazky_provizorni/placeholder-card.png");
+}
+
+.o-nas .o-nas-grid .vybaveni{
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: pink;
+    background-image: url("../obrazky_provizorni/placeholder-card.png");
+}
+
+.o-nas .o-nas-grid .chci-si-precist-vic{
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border: 0.5em solid white;
+    border-radius: 90em;
+    display: flex;
+    align-items: center;   
+}
+
+.o-nas .o-nas-grid .chci-si-precist-vic p{
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.o-nas .o-nas-grid .nase-sluzby{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 12;
+    background-color: green;
+    background-image: url("../obrazky_provizorni/placeholder-card.png");
+}
+
+.o-nas .o-nas-grid .prostory{
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 8;
+    grid-row-end: 12;
+    background-color: orange;
+    background-image: url("../obrazky_provizorni/placeholder-card.png");
+}
+
+.o-nas .o-nas-grid .koupit-clenstvi{
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    background-color: #DC635A;
+    border-radius: 90em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.o-nas .o-nas-grid .koupit-clenstvi p{
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+
+.o-nas .o-nas-grid .koupit-clenstvi .obrazek-o-nas{
+    border-radius: 99em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 99em;
+    cursor: pointer;
+}
+
+/* tridy pro javascript */
+.white-background {
+    background-color: white;
+    background-image: none;
+    color: black; /* Změna barvy textu, pokud je potřeba */
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  02 -  NASE SLUZBY */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.nase-sluzby .nav{
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+}
+
+.nase-sluzby .nav li{
+    font-size: 2em;
+    font-weight: 900;
+    padding: 2em 0;
+    color: gray;
+}
+
+.nase-sluzby .nav li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.nase-sluzby .nav li a:active{
+    color: var(--color--secondary);
+}
+
+
+.nase-sluzby .obrazky{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img-1 img-2";
+    gap: 2em;
+}   
+
+.nase-sluzby .obrazky .obrazky-card img{
+    border-radius: 2em;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+}
+
+.nase-sluzby .obrazky .obrazky-card .img-1{
+    grid-area: img-1;
+}
+.nase-sluzby .obrazky .obrazky-card .img-2{
+    grid-area: img-2;
+}
+
+.nase-sluzby .obrazky .obrazky-card p{
+    position: absolute;
+    padding: 2em 0 0 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  03 -  CENIK */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cenik .grid-cenik{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cenik-text cenik-tabulka"
+    "cenik-text2 cenik-tabulka"
+    "cenik-podpis cenik-tabulka";
+}
+
+.cenik .cenik-text{
+    grid-area: cenik-text;
+}
+
+.cenik .cenik-text2{
+    grid-area: cenik-text2;
+}
+
+.cenik .cenik-podpis{
+    grid-area: cenik-podpis;
+}
+
+.cenik .cenik-tabulka{
+    grid-area: cenik-tabulka;
+    background-color: white;
+    border-radius: 2em;
+    color: black;
+}
+
+.cenik tr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.cenik th, .cenik td{
+    padding: 1em;
+}
+
+.cenik-tabulka h2{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.cenik-tabulka .tabulka-grid{
+    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+    "tabulka tabulka-obrazek"
+    "tabulka-popisek tabulka-popisek";
+    padding: 1em;
+}
+
+.cenik-tabulka .tabulka{
+    grid-area: tabulka;
+    border-top: 1px solid black;
+}
+
+.cenik-tabulka .tabulka-obrazek{
+    grid-area: tabulka-obrazek;
+    text-align: center;
+}
+
+.cenik-tabulka .tabulka-obrazek img{
+    width: 750px;
+    height: 500px;
+    border-radius: 2em;
+}
+
+.cenik-tabulka .tabulka-popisek{
+    grid-area: tabulka-popisek;
+    padding: 1em;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  04 -  NASI TRENERI */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.treneri .treneri-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+}
+
+.treneri .card{
+    border: 0.25em solid white;
+    border-radius: 1em;
+}
+
+.treneri .treneri-cards .card .name{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.treneri .treneri-cards .card .name{
+    padding: 2em;
+}
+
+.treneri .treneri-cards img{
+    width: 25vw;
+    height: auto;
+    border-radius: 2em;
+}
+
+.hidden{
+    display: none;
+}
+
+.treneri .button-wrapper{
+    padding: 1em;
+    text-align: center;
+}
+
+.treneri .treneri-button{
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  PRIJD NAVSTIVIT */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navsteva{
+    background-color: white;
+    border-radius: 2em;
+    color: black;
+    padding: 2em;
+}
+
+.navsteva-nadpis{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.navsteva-nadpis span{
+    color: #DC635A;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  FOOTER  */
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer-grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "adresa . ."
+    "telefon . loga"
+    "email footer-middle sumavan";
+    padding: 1em 0;
+}
+
+.footer-grid .adresa {
+    grid-area: adresa;
+}
+
+.footer-grid .telefon {
+    grid-area: telefon;
+    display: flex;
+    align-self: center;
+}
+
+.footer-grid .email {
+    grid-area: email;
+}
+
+.footer-grid .footer-middle {
+    grid-area: footer-middle;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer-grid .loga {
+    grid-area: loga;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+.footer-grid .sumavan {
+    grid-area: sumavan;
+    text-align: right;
+}

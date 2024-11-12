@@ -1,7 +1,0 @@
-grid buď takto nebo pres grid-template-areas
-
-.test {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-}
