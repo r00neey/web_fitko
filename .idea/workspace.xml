@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styly.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styly.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokusy/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokusy/pokus.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,7 @@
       <workItem from="1731517781790" duration="322000" />
       <workItem from="1731518115123" duration="40000" />
       <workItem from="1731518180081" duration="135000" />
-      <workItem from="1731518323519" duration="4090000" />
+      <workItem from="1731518323519" duration="5648000" />
     </task>
     <servers />
   </component>

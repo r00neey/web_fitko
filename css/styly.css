@@ -369,12 +369,13 @@ nav ul li a:visited{
 
 .cenik .grid-cenik{
     display: grid;
+    gap: 1em;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "cenik-text cenik-tabulka"
     "cenik-text2 cenik-tabulka"
-    "cenik-podpis cenik-tabulka";
+    "obrazek-podpis cenik-tabulka";
 }
 
 .cenik .cenik-text{
@@ -385,8 +386,11 @@ nav ul li a:visited{
     grid-area: cenik-text2;
 }
 
-.cenik .cenik-podpis{
-    grid-area: cenik-podpis;
+.cenik .obrazek-podpis{
+    grid-area: obrazek-podpis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cenik .cenik-tabulka{
@@ -403,27 +407,34 @@ nav ul li a:visited{
 }
 
 .cenik-tabulka .tabulka-grid{
-    gap: 1em;
+    gap: 1em 2em;
+    padding: 1em;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 5em;
     grid-template-areas:
     "tabulka-vrch tabulka-obrazek"
     "tabulka-spodek tabulka-obrazek"
     "tabulka-popisek tabulka-popisek";
-    padding: 1em;
 }
 .cenik-tabulka .tabulka-vrch{
     grid-area: tabulka-vrch;
+    border: 1px solid red;
 }
 
 
 .cenik-tabulka .tabulka-spodek{
     grid-area: tabulka-spodek;
+    border: 1px solid blue;
 }
 
 .cenik-tabulka .tabulka-obrazek{
     grid-area: tabulka-obrazek;
+}
+
+.cenik-tabulka .tabulka-spodek, .cenik-tabulka .tabulka-vrch{
+    text-align: center;
+    margin-top: 2em;
 }
 
 .cenik-tabulka .tabulka-obrazek img{
