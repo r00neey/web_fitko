@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // 04 - treneri
 // klikani na kartu
-
 document.addEventListener("DOMContentLoaded", function() {
     var cards = document.querySelectorAll(".treneri-cards .card");
 
