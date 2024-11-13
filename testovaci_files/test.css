@@ -3,17 +3,17 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2em;
-    justify-content: center;
 }
 
 .treneri .card {
     border: 0.25em solid white;
     border-radius: 1em;
     width: 25vw; /* Nastavíme šířku karty */
-    height: 300px; /* Nastavíme pevnou výšku karty */
+    height: 30vw; /* Nastavíme pevnou výšku karty */
     position: relative; /* Přidáme pozici relativní */
     margin: 1em; /* Přidáme margin pro oddělení karet */
     overflow: hidden; /* Zajistíme, že obsah karty nepřesáhne její hranice */
+    border: 2px solid black;
 }
 
 .treneri .treneri-cards .card .name {
@@ -65,8 +65,7 @@
 
 .card .back {
     display: none;
-    background-color: yellow;
-    border: 1px solid black;
+    background-color: white;
 }
 
 .card.flipped .front {
