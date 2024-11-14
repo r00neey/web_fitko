@@ -1,0 +1,113 @@
+@media (max-width: 500px) {
+
+    /* NAVIGACE *
+    /*
+        TODO: hamburger navigace 
+    */
+
+    /* TRIDY OVLIVNUJICI VIC ELEMENTU */
+    .sekce-nadpis h2:nth-child(2){
+        width: 100%;
+    }
+
+    /* UVOD */
+
+    .uvod .uvod-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "nazev nazev nazev"
+        "text-hlavni text-hlavni ."
+        "text-vedlejsi . ."
+        ". oteviraci-doba oteviraci-doba";
+    }
+
+    .uvod .uvod-grid h1{
+        font-size: 5em; 
+        text-align: left;
+        padding-left: 0.125em;
+    }
+
+    .uvod .uvod-grid .text-hlavni{
+        display: block;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    .uvod .uvod-grid .oteviraci-doba{
+        justify-content: center;
+        align-items: center;
+        background-color: #DEDEDE;
+        border-radius: 1em;
+        margin: 1em;
+    }
+
+    .uvod .uvod-grid .oteviraci-doba .casy{
+        grid-area: oteviraci-doba;
+        font-size: 1em;  
+    }
+
+    /* O NÁS */
+
+    .o-nas .o-nas-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr 3fr 1fr 1fr;;
+    }    
+
+    .o-nas .o-nas-grid .kde-se-nachazime{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .o-nas .o-nas-grid .proc-zrovna-sumavan{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .o-nas .o-nas-grid .vybaveni{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .o-nas .o-nas-grid .nase-sluzby{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .o-nas .o-nas-grid .prostory{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+
+    .o-nas .o-nas-grid .chci-si-precist-vic{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
+    .o-nas .o-nas-grid .koupit-clenstvi{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+
+    /* NASE SLUŽBY */
+
+    .nase-sluzby .nav {
+        flex-wrap: nowrap;
+        overflow: scroll;
+        gap: 2em;
+    }
+}
