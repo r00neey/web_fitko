@@ -92,6 +92,8 @@
         "cenik-tabulka cenik-tabulka";
     }
 
+    /* MUSI TU BYT? .cenik-tabulka .tabulka-grid ?*/
+
     .cenik-tabulka .tabulka-grid{
         gap: 1em 2em;
         padding: 1em;

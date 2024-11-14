@@ -43,11 +43,16 @@
     }
 
     .uvod .uvod-grid .oteviraci-doba .casy{
+        text-align: center;
         grid-area: oteviraci-doba;
         font-size: 1em;  
     }
 
     /* O NÁS */
+
+    .o-nas .o-nas-grid .p-padding{
+        padding: 1em;
+    }
 
     .o-nas .o-nas-grid{
         grid-template-columns: 1fr;
@@ -108,6 +113,50 @@
     .nase-sluzby .nav {
         flex-wrap: nowrap;
         overflow: scroll;
-        gap: 2em;
+        gap: 3em;
+        padding: 0 1em 0 1em;
     }
+
+    /* CENÍK */
+
+    .cenik .grid-cenik{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /*
+        "cenik-text cenik-tabulka"
+        "cenik-text2 cenik-tabulka"
+        "obrazek-podpis cenik-tabulka"
+        */
+        grid-template-areas:
+        "cenik-text"
+        "cenik-text2"
+        "obrazek-podpis"
+        "cenik-tabulka";
+    }
+
+    /* NEVIM JESTLI UPLNE DOBRY NAPAD*/
+    .cenik .grid-cenik{
+        display: block;
+    }
+
+    .cenik-tabulka .tabulka-grid{
+        gap: 1em 2em;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0.25fr;
+        /*
+        grid-template-areas:
+        "tabulka-vrch tabulka-obrazek"
+        "tabulka-spodek tabulka-obrazek"
+        "tabulka-popisek tabulka-popisek";
+        */
+        grid-template-areas:
+        "tabulka-obrazek"
+        "tabulka-vrch"
+        "tabulka-spodek"
+        "tabulka-popisek";
+        }
 }
