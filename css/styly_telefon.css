@@ -5,6 +5,10 @@
         TODO: hamburger navigace 
     */
 
+    nav{
+        
+    }
+
     /* TRIDY OVLIVNUJICI VIC ELEMENTU */
     .sekce-nadpis h2:nth-child(2){
         width: 100%;
@@ -23,7 +27,7 @@
     }
 
     .uvod .uvod-grid h1{
-        font-size: 5em; 
+        font-size: 4em; 
         text-align: left;
         padding-left: 0.125em;
     }
@@ -158,5 +162,42 @@
         "tabulka-vrch"
         "tabulka-spodek"
         "tabulka-popisek";
+        }
+
+        /* footer */
+
+        /*
+        grid-template-areas: 
+        "adresa . ."
+        "telefon . loga"
+        "email footer-middle sumavan";
+        */
+
+        .footer-grid{
+            gap: 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 0.5fr);
+            grid-template-areas:
+            "adresa"
+            "telefon"
+            "email"
+            "loga"
+            "sumavan";
+        }
+
+        .footer-grid .telefon{
+            display: block;
+            align-self: auto;
+        }
+
+        .footer-grid .loga{
+            margin-top: 2em;
+            display: block;
+            align-self: auto;
+        }
+
+        .footer-grid .sumavan{
+            display: block;
+            text-align: left;
         }
 }
