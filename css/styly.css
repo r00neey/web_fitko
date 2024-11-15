@@ -524,6 +524,7 @@ nav ul li a:visited{
 .card.flipped .back{
     display: flex;
     border-radius: 2em;
+    flex-direction: column;
 }
 
 .card.flipped .back h3{
