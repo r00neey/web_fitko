@@ -5,10 +5,6 @@
         TODO: hamburger navigace 
     */
 
-    nav{
-        
-    }
-
     /* TRIDY OVLIVNUJICI VIC ELEMENTU */
     .sekce-nadpis h2:nth-child(2){
         width: 100%;
@@ -27,7 +23,8 @@
     }
 
     .uvod .uvod-grid h1{
-        font-size: 4em; 
+        /*font-size: 4em; */
+        font-size: calc(3rem + 2vw);
         text-align: left;
         padding-left: 0.125em;
     }

@@ -30,6 +30,8 @@ body{
     border-radius: 0.5em;
 }
 
+.color-primary{color: var(--color--primary);}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  UVOD  */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -53,13 +55,13 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    color: var(--color--tertiary);
 }
 
 nav ul li:first-child{
     margin-right: auto;
     border-radius: 1em;
     background-color: var(--color--tertiary);
-    color: var(--color--primary);
 }
 
 /*TOTO BLBNE*/
@@ -445,9 +447,19 @@ nav ul li a:visited{
 
 .cenik-tabulka .tabulka-popisek{
     grid-area: tabulka-popisek;
+    display: flex;
+    gap: 2em;
     padding: 1em;
 }
 
+.cenik-button{
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    cursor: pointer;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  04 -  NASI TRENERI */

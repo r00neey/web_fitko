@@ -2,8 +2,33 @@
 @media (max-width: 1200px) {
     
     /* UVOD */
+        .uvod .uvod-grid h1{
+            /*font-size: 5em;*/
+            font-size: calc(4rem + 2vw)
+        }
         .uvod .uvod-grid .text-hlavni{display: none;}
         .uvod .uvod-grid .text-vedlejsi{display: none;}
+
+        .uvod .uvod-grid{
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "nazev nazev nazev"
+            ". . ."
+            ". oteviraci-doba oteviraci-doba";
+        }
+
+        .uvod .uvod-grid .oteviraci-doba{
+            align-items:end;
+            justify-content:end;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .uvod .uvod-grid .oteviraci-doba .casy{
+            padding: 1em 2em;
+            border-radius: 1em;
+        }
 
     /* O NÁS */
         .o-nas .o-nas-grid .kde-se-nachazime{
