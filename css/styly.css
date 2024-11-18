@@ -369,90 +369,77 @@ nav ul li a:visited{
 /*  03 -  CENIK */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.cenik .grid-cenik{
+.cenik .grid-cenik {
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "cenik-text cenik-tabulka"
-    "cenik-text2 cenik-tabulka"
-    "obrazek-podpis cenik-tabulka";
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cenik-text cenik-tabulka"
 }
 
-.cenik .cenik-text{
+.cenik .cenik-text {
     grid-area: cenik-text;
 }
 
-.cenik .cenik-text2{
-    grid-area: cenik-text2;
-}
-
-.cenik .obrazek-podpis{
-    grid-area: obrazek-podpis;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cenik .cenik-tabulka{
+.cenik .cenik-tabulka {
     grid-area: cenik-tabulka;
     background-color: white;
     border-radius: 2em;
     color: black;
 }
 
-.cenik-tabulka h2{
+.cenik-tabulka h2 {
     text-align: center;
     font-size: 4em;
     font-weight: 900;
 }
 
-.cenik-tabulka .tabulka-grid{
+.cenik-tabulka .tabulka-grid {
     gap: 1em 2em;
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 2fr 5em;
     grid-template-areas:
-    "tabulka-vrch tabulka-obrazek"
-    "tabulka-spodek tabulka-obrazek"
-    "tabulka-popisek tabulka-popisek";
+        "tabulka-vrch tabulka-obrazek"
+        "tabulka-spodek tabulka-obrazek"
+        "tabulka-popisek tabulka-popisek";
 }
-.cenik-tabulka .tabulka-vrch{
+.cenik-tabulka .tabulka-vrch {
     grid-area: tabulka-vrch;
     border: 1px solid red;
 }
 
-
-.cenik-tabulka .tabulka-spodek{
+.cenik-tabulka .tabulka-spodek {
     grid-area: tabulka-spodek;
     border: 1px solid blue;
 }
 
-.cenik-tabulka .tabulka-obrazek{
+.cenik-tabulka .tabulka-obrazek {
     grid-area: tabulka-obrazek;
 }
 
-.cenik-tabulka .tabulka-spodek, .cenik-tabulka .tabulka-vrch{
+.cenik-tabulka .tabulka-spodek,
+.cenik-tabulka .tabulka-vrch {
     text-align: center;
     margin-top: 2em;
 }
 
-.cenik-tabulka .tabulka-obrazek img{
+.cenik-tabulka .tabulka-obrazek img {
     width: 100%;
     height: 100%;
     border-radius: 2em;
 }
 
-.cenik-tabulka .tabulka-popisek{
+.cenik-tabulka .tabulka-popisek {
     grid-area: tabulka-popisek;
     display: flex;
     gap: 2em;
     padding: 1em;
 }
 
-.cenik-button{
+.cenik-button {
     border: 0px;
     background-color: black;
     color: white;

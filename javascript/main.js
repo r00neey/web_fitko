@@ -29,6 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// 03 - CENIK
+// klikani na buttony
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ceniky = document.querySelectorAll(".cenik-tabulka");
+    const buttons = document.querySelectorAll(".cenik-button");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const targetId = button.getAttribute("data-target");
+
+            ceniky.forEach(cenik => {
+                cenik.style.display = cenik.id === targetId ? "block" : "none";
+            });
+        });
+    });
+});
+
+
 // 04 - treneri
 // klikani na kartu
 document.addEventListener("DOMContentLoaded", function() {

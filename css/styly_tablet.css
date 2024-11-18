@@ -100,21 +100,13 @@
     }   
 
     /* CENÍK */
-    .cenik .grid-cenik{
+    .cenik .grid-cenik {
         display: grid;
         gap: 1em;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr 3fr;
-        /*
-        grid-template-areas: 
-        "cenik-text cenik-tabulka"
-        "cenik-text2 cenik-tabulka"
-        "obrazek-podpis cenik-tabulka";
-        */
-        grid-template-areas: 
-        "cenik-text obrazek-podpis"
-        "cenik-text2 obrazek-podpis"
-        "cenik-tabulka cenik-tabulka";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "cenik-text cenik-tabulka"
     }
 
     /* MUSI TU BYT? .cenik-tabulka .tabulka-grid ?*/
@@ -124,7 +116,7 @@
         padding: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 2fr 5em;
+        grid-template-rows: 2fr 2fr 1fr;
         grid-template-areas:
         "tabulka-vrch tabulka-obrazek"
         "tabulka-spodek tabulka-obrazek"
