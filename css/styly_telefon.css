@@ -14,11 +14,11 @@
 
     .uvod .uvod-grid{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
         "nazev nazev nazev"
         "text-hlavni text-hlavni ."
-        "text-vedlejsi . ."
+        /*"text-vedlejsi . ."*/
         ". oteviraci-doba oteviraci-doba";
     }
 
