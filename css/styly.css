@@ -410,14 +410,47 @@ nav ul li a:visited{
         "tabulka-spodek tabulka-obrazek"
         "tabulka-popisek tabulka-popisek";
 }
+
 .cenik-tabulka .tabulka-vrch {
     grid-area: tabulka-vrch;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cenik-tabulka .tabulka-vrch tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em 2em;
+    border-top: 2px solid black;
+    font-weight: 900;
+    font-size: 1.15em;
+}
+
+.cenik-tabulka .tabulka-vrch tr:last-child {
+    border-bottom: 2px solid black;
 }
 
 .cenik-tabulka .tabulka-spodek {
     grid-area: tabulka-spodek;
-    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cenik-tabulka .tabulka-spodek tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em 2em;
+    border-top: 2px solid black;
+    font-weight: 900;
+    font-size: 1.15em;
+}
+
+.cenik-tabulka .tabulka-spodek tr:last-child {
+    border-bottom: 2px solid black;
 }
 
 .cenik-tabulka .tabulka-obrazek {
