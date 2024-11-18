@@ -380,6 +380,10 @@ nav ul li a:visited{
 
 .cenik .cenik-text {
     grid-area: cenik-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cenik .cenik-tabulka {
@@ -462,7 +466,9 @@ nav ul li a:visited{
 
 .treneri .card{
     /* toto nevim*/
-    flex: 0 1 25em;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25em;
     cursor: pointer;
 }
 
