@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styly.css" />
     <link rel="stylesheet" href="css/styly_tablet.css" />
     <link rel="stylesheet" href="css/styly_telefon.css" />
-    <script src="javascript/main.js"></script>
+    <script src="javascript/main.js" defer></script>
 
     <!-- fonty -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,8 +22,13 @@
   <body>
     <header>
       <nav>
+        <button class="hamburger" aria-label="Menu">☰</button>
         <ul>
-          <li><a class="color-primary" href="#">Rezervační systém</a></li>
+          <li>
+            <a class="color-primary visited-remove" href="#">
+              Rezervační systém
+            </a>
+          </li>
           <li><a href="#o-nas">O nás</a></li>
           <li><a href="#nase-sluzby">Naše služby</a></li>
           <li><a href="#cenik">Ceník</a></li>
@@ -34,7 +39,7 @@
     </header>
     <main>
       <div>
-        <div class="uvod">
+        <div class="uvod p-uvod">
           <div class="uvod-grid">
             <h1>SUMAVAN FITNESS</h1>
             <p class="text-hlavni">PŘIJĎ SI DÁT DO TĚLA A NIČEHO NELITUJ</p>
@@ -51,7 +56,7 @@
             </div>
           </div>
         </div>
-        <section class="o-nas" id="o-nas">
+        <section class="o-nas p-sekce" id="o-nas">
           <div class="sekce-nadpis">
             <h2>01</h2>
             <h2>NĚCO MÁLO O NÁS</h2>
@@ -126,7 +131,7 @@
             </div>
           </div>
         </section>
-        <section class="nase-sluzby" id="nase-sluzby">
+        <section class="nase-sluzby p-sekce" id="nase-sluzby">
           <div class="sekce-nadpis">
             <h2>02</h2>
             <h2>NAŠE SLUŽBY</h2>
@@ -161,56 +166,83 @@
             <div class="skupinove-lekce">
               <div class="card crossfit">
                 <div class="card-front">
-                  <p>CROSSFIT</p>
+                  <h3>CROSSFIT</h3>
                   <img
                     src="obrazky_provizorni/placeholder-card.png"
                     alt="Placeholder"
                   />
                 </div>
                 <div class="card-back">
-                  <p>Více informací o CROSSFIT</p>
+                  <h3>CROSSFIT</h3>
+                  <p>
+                    Připojte se k naší energické a dynamické CrossFit lekci,
+                    která je určena pro všechny úrovně fitness nadšenců - od
+                    začátečníků po pokročilé. CrossFit kombinuje prvky vysoce
+                    intenzivního intervalového tréninku (HIIT), olympijského
+                    vzpírání, gymnastiky a funkčního tréninku.
+                  </p>
+                  <p>
+                    Naše lekce jsou navrženy tak, aby posílily vaše tělo,
+                    zlepšily vaši vytrvalost a zvýšily vaši celkovou fyzickou
+                    kondici.
+                  </p>
+                  <div class="card-back-treneri">
+                    <p>TRENÉŘI</p>
+                    <img src="fotky-treneri/venca.jpeg" alt="" />
+                    <img src="fotky-treneri/venca.jpeg" alt="" />
+                  </div>
+                  <div class="card-back-treneri-button">
+                    <button>KOUKNOUT NA ROZVRH</button>
+                    <img src="ikony/right-arrow.png" alt="" />
+                  </div>
                 </div>
               </div>
               <div class="card bjj">
                 <div class="card-front">
-                  <p>BJJ</p>
+                  <h3>BJJ</h3>
                   <img
                     src="obrazky_provizorni/placeholder-card.png"
                     alt="Placeholder"
                   />
                 </div>
                 <div class="card-back">
-                  <p>Více informací o BJJ</p>
+                  <h3>BJJ</h3>
                 </div>
               </div>
               <div class="card box">
                 <div class="card-front">
-                  <p>BOX</p>
+                  <h3>BOX</h3>
                   <img
                     src="obrazky_provizorni/placeholder-card.png"
                     alt="Placeholder"
                   />
                 </div>
                 <div class="card-back">
-                  <p>Více informací o BOX</p>
+                  <h3>BOX</h3>
                 </div>
               </div>
               <div class="card trampoliny">
                 <div class="card-front">
-                  <p>TRAMPOLÍNY</p>
+                  <h3>TRAMPOLÍNY</h3>
                   <img
                     src="obrazky_provizorni/placeholder-card.png"
                     alt="Placeholder"
                   />
                 </div>
                 <div class="card-back">
-                  <p>Více informací o TRAMPOLÍNY</p>
+                  <h3>TRAMPOLÍNY</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione incidunt sequi rerum minima ab, vero aut molestias
+                    perspiciatis. Deleniti vel libero adipisci ut ad voluptates
+                    fugit laudantium, vitae officiis quasi!
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="cenik" id="cenik">
+        <section class="cenik p-sekce" id="cenik">
           <div class="sekce-nadpis">
             <h2>03</h2>
             <h2>CENÍK</h2>
@@ -286,18 +318,24 @@
                     <img src="obrazky_provizorni/placeholder-card.png" alt="" />
                   </div>
                   <div class="tabulka-popisek">
-                    <button class="cenik-button" data-target="cenik-2">
-                      dopředu
-                    </button>
+                    <img
+                      src="ikony/right-arrow.png"
+                      alt="šipka dopředu"
+                      class="button-obrazek otoceni180"
+                      data-target="cenik-2"
+                    />
                     <p>
                       Půjčení ručníku je zdarma, v případě, že má člen naši
                       kartičku na ručníkový servis za jednorázový poplatek 100
                       Kč. Je také možnost zapůjčení zámku za vratnou zálohu 200
                       Kč.
                     </p>
-                    <button class="cenik-button" data-target="cenik-2">
-                      dozadu
-                    </button>
+                    <img
+                      src="ikony/right-arrow.png"
+                      alt="šipka dopředu"
+                      class="button-obrazek"
+                      data-target="cenik-2"
+                    />
                   </div>
                 </div>
               </div>
@@ -342,17 +380,23 @@
                     <img src="obrazky_provizorni/placeholder-card.png" alt="" />
                   </div>
                   <div class="tabulka-popisek">
-                    <button class="cenik-button" data-target="cenik-1">
-                      dopředu
-                    </button>
+                    <img
+                      src="ikony/right-arrow.png"
+                      alt="šipka dopředu"
+                      class="button-obrazek otoceni180"
+                      data-target="cenik-1"
+                    />
                     <p>
                       Ceny tréninků jsou určené pro za jednotlivé lekce s
                       trenéry. V ceně vstupu je i možnost využití posilovny,
                       případně sauny pro Vaše 100% zregenerování.
                     </p>
-                    <button class="cenik-button" data-target="cenik-1">
-                      dozadu
-                    </button>
+                    <img
+                      src="ikony/right-arrow.png"
+                      alt="šipka dopředu"
+                      class="button-obrazek"
+                      data-target="cenik-1"
+                    />
                   </div>
                 </div>
               </div>
@@ -361,7 +405,7 @@
         </section>
 
         <!-- TODO: jestli bude čas tak zmenšit obrázky -> reload time -->
-        <section class="treneri" id="treneri">
+        <section class="treneri p-sekce" id="treneri">
           <div class="sekce-nadpis">
             <h2>04</h2>
             <h2>TRENÉŘI</h2>
@@ -372,7 +416,7 @@
             individuálně věnovat, poskytne odborné rady a podpoří vás na vaší
             cestě ke zdraví a kondici. Našim cílem je, aby každý klient cítil
             podporu, respekt a motivaci bez ohledu na svou úroveň fyzické
-            kondice
+            kondice.
           </p>
           <div class="treneri-cards">
             <div class="card">
@@ -396,10 +440,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -426,10 +470,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -460,10 +504,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -489,10 +533,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -507,10 +551,10 @@
                 <p></p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -540,10 +584,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -573,10 +617,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -604,10 +648,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -636,10 +680,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -653,10 +697,10 @@
                 <p>Obsluha recepce</p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -686,10 +730,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -715,10 +759,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -749,10 +793,10 @@
                 </p>
                 <div class="back-spodek">
                   <div class="back-obrazky">
-                    <img src="ikony/facebook-ikona.png" alt="" />
-                    <img src="ikony/instagram-ikona.png" alt="" />
+                    <img src="ikony/facebook-ikona-cervena.png" alt="" />
+                    <img src="ikony/instagram-ikona-cervena.png" alt="" />
                   </div>
-                  <p>Tel.: 756 663 212</p>
+                  <p class="p-reset">Tel.: 756 663 212</p>
                 </div>
               </div>
             </div>
@@ -763,7 +807,7 @@
             </button>
           </div>
         </section>
-        <section class="navsteva">
+        <section class="navsteva p-sekce">
           <h2 class="navsteva-nadpis">
             PŘIJĎ NAVŠTÍVIT <span class="">ŠUMAVANA</span>.
           </h2>
@@ -782,11 +826,11 @@
       <p class="telefon">Tel: 752 336 533</p>
       <p class="email">E-mail: sumavanfitness@fit.cz</p>
       <div class="footer-middle">
-        <a href=""><p class="o-nas">O nás</p></a>
-        <a href=""><p class="nase-sluzby">Naše služby</p></a>
-        <a href=""><p class="treneri">Trenéři</p></a>
-        <a href=""><p class="cenik">Ceník</p></a>
-        <a href=""><p class="kontakt">Kontakt</p></a>
+        <a href="#o-nas"><p class="o-nas">O nás</p></a>
+        <a href="#nase-sluzby"><p class="nase-sluzby">Naše služby</p></a>
+        <a href="#treneri"><p class="treneri">Trenéři</p></a>
+        <a href="#cenik"><p class="cenik">Ceník</p></a>
+        <a href="#kontakt"><p class="kontakt">Kontakt</p></a>
       </div>
       <div class="loga">
         <img

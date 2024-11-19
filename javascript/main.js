@@ -17,6 +17,28 @@ function toggle_divs() {
     }
 }
 
+//navigace
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li a');
+  
+    // Zobrazení/skrytí navigace po kliknutí na hamburger
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  
+    // Skrytí navigace po kliknutí na odkaz
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+      });
+    });
+  });
+  
+
+
 // 01 - o nas
 // klikani na karticky
 document.addEventListener("DOMContentLoaded", function() {
@@ -92,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const ceniky = document.querySelectorAll(".cenik-tabulka");
-    const buttons = document.querySelectorAll(".cenik-button");
+    const buttons = document.querySelectorAll(".button-obrazek");
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {

@@ -31,10 +31,17 @@ body{
 }
 
 .color-primary{color: var(--color--primary);}
+.p-uvod{padding: 4em 0 2em 0;}
+.p-sekce{padding: 2em 0;}
+.p-reset{padding: 0 !important;}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  UVOD  */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav button{
+    display: none;
+}
 
 nav{
     padding: 2em 0;
@@ -50,7 +57,7 @@ nav ul li{
     padding: 1em;
     color: var(--color--tertiary);
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 nav ul li a{
@@ -64,11 +71,6 @@ nav ul li:first-child{
     background-color: var(--color--tertiary);
 }
 
-nav ul li:first-child:visited, nav ul li:first-child:active, nav ul li:first-child:hover{
-    color: var(--color--secondary);
-}
-
-/*TOTO BLBNE*/
 nav ul li a:hover{
     color: var(--color--primary);
     cursor: pointer;
@@ -79,6 +81,11 @@ nav ul li a:visited{
     color: var(--color--tertiary);
     cursor: pointer;
 }
+
+nav ul li:first-child a:visited{
+    color: white;
+}
+
 
 .sekce-nadpis{
     display: flex;
@@ -105,7 +112,8 @@ nav ul li a:visited{
 
 .uvod .uvod-grid{
     background-image: url("../obrazky_provizorni/uvodni_foto.webp");
-    height: 80vh;
+    background-size: cover;
+    height: 60vh;
     display: grid;
     background-position: center;
     border-radius: 2em;
@@ -161,7 +169,7 @@ nav ul li a:visited{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .o-nas .popis{
-    font-size: 1.25em;
+    line-height: 2em;
 }
 
 .o-nas .popis .sipka{
@@ -183,7 +191,6 @@ nav ul li a:visited{
 }
 
 .o-nas .o-nas-grid div{
-    border: 1px solid red;
     border-radius: 2em;
 }
 
@@ -398,18 +405,72 @@ nav ul li a:visited{
     grid-area: trampoliny;
 }
 
-.skupinove-lekce .card p{
+.skupinove-lekce .card h3{
     position: absolute;
     color: black;
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: bold;
-    padding: 1em;
+    padding: 1rem;
+}
+
+.skupinove-lekce .card-back h3{
+    position: relative;
+    color: black;
+}
+
+.skupinove-lekce .card p{
+    padding: 1rem;
 }
 
 .skupinove-lekce .card img{
     width: 100%;
     height: 100%;
     border-radius: 2em;
+}
+
+.skupinove-lekce .card .card-back-treneri p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.skupinove-lekce .card .card-back-treneri img{
+    padding: 1em;
+    max-width: 100px;
+    max-height: auto;
+    border-radius: 2em;
+}
+
+.skupinove-lekce .card .card-back-treneri-button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.skupinove-lekce .card .card-back-treneri-button{
+    border-radius: 2em;
+    background-color: var(--color--secondary);
+    width: fit-content;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.skupinove-lekce .card .card-back-treneri-button button{
+    border: none;
+    background-color: var(--color--secondary);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.skupinove-lekce .card .card-back-treneri-button img{
+    max-width: 40px;
+    max-height: 40px;
 }
 
 /* TRIDY PRO JAVASCRIPT */
@@ -420,6 +481,16 @@ nav ul li a:visited{
     height: 100%;
 }  
 
+.card-front{
+    display: block;
+}
+.card-back{
+    display: none;
+    background-color: white;
+    color: #333;
+    border-radius: 2em;
+}
+
 .card-front,
 .card-back {
     position: absolute;
@@ -427,12 +498,6 @@ nav ul li a:visited{
     height: 100%;
 }
 
-
-.card-back{
-    background: #f0f0f0;
-    color: #333;
-    border-radius: 2em;
-}
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -446,6 +511,11 @@ nav ul li a:visited{
     grid-template-rows: 1fr;
     grid-template-areas:
         "cenik-text cenik-tabulka"
+}
+
+.obrazek-podpis img{
+    width: 100%;
+    height: 100%;
 }
 
 .cenik .cenik-text {
@@ -542,6 +612,8 @@ nav ul li a:visited{
 .cenik-tabulka .tabulka-popisek {
     grid-area: tabulka-popisek;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2em;
     padding: 1em;
 }
@@ -553,6 +625,20 @@ nav ul li a:visited{
     border-radius: 1em;
     padding: 1em;
     cursor: pointer;
+}
+
+.button-obrazek{
+    cursor: pointer;
+    width: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0.5em;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+.otoceni180{
+    transform: rotate(180deg);
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -585,7 +671,7 @@ nav ul li a:visited{
     padding: 2em;
 }
 
-.treneri .treneri-cards img{
+.treneri .treneri-cards .front img{
     width: 100%;
     height: auto;
     border-radius: 2em;
@@ -603,11 +689,11 @@ nav ul li a:visited{
 .treneri .treneri-button{
     cursor: pointer;
     color: white;
-    background-color: grey;
+    background-color: var(--color--tertiary);
     font-weight: 900;
     font-size: 1em;
     border: none;
-    padding: 1em;
+    padding: 1em 2em;
     border-radius: 2em;
 }
 
@@ -630,6 +716,7 @@ nav ul li a:visited{
     color: red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1em;
 }
 
@@ -643,7 +730,10 @@ nav ul li a:visited{
 .card .front, .card .back{
     width: 100%;
     height: 100%;
+    min-height: 40em;
+    max-height: 40em;
     backface-visibility: hidden;
+    overflow: scroll;
 }
 
 .card .back{
@@ -696,6 +786,7 @@ nav ul li a:visited{
     "telefon . loga"
     "email footer-middle sumavan";
     padding: 2em 0;
+    gap: 0 1em
 }
 
 .footer-grid .adresa {

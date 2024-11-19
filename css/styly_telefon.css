@@ -4,10 +4,48 @@
     /*
         TODO: hamburger navigace 
     */
-
     /* TRIDY OVLIVNUJICI VIC ELEMENTU */
     .sekce-nadpis h2:nth-child(2){
         width: 100%;
+    }
+
+    /* NAVIGACE */
+
+    /* Skryjeme menu a upravíme jeho styl pro menší zařízení */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4em; /* Uprav podle výšky navigace */
+        right: 1em;
+        background-color: white;
+        padding: 1em;
+        border-radius: 0.5em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Styl jednotlivých odkazů v menu */
+    nav ul li {
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    /* Zobrazíme hamburger tlačítko */
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    /* Při zobrazení menu */
+    nav ul.show {
+        display: flex;
     }
 
     /* UVOD */
@@ -19,7 +57,7 @@
         "nazev nazev nazev"
         "text-hlavni text-hlavni ."
         /*"text-vedlejsi . ."*/
-        ". oteviraci-doba oteviraci-doba";
+        "oteviraci-doba oteviraci-doba oteviraci-doba";
     }
 
     .uvod .uvod-grid h1{
@@ -36,11 +74,12 @@
     }
 
     .uvod .uvod-grid .oteviraci-doba{
-        justify-content: center;
-        align-items: center;
-        background-color: #DEDEDE;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
         border-radius: 1em;
         margin: 1em;
+        padding: 0;
     }
 
     .uvod .uvod-grid .oteviraci-doba .casy{
@@ -125,11 +164,6 @@
         gap: 1em;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        /*
-        "cenik-text cenik-tabulka"
-        "cenik-text2 cenik-tabulka"
-        "obrazek-podpis cenik-tabulka"
-        */
         grid-template-areas:
         "cenik-text"
         "cenik-tabulka";
@@ -140,18 +174,16 @@
         display: block;
     }
 
+    .cenik .grid-cenik .cenik-text p, .cenik .grid-cenik .cenik-text img{
+        padding: 1em 1em;
+    }
+
     .cenik-tabulka .tabulka-grid{
         gap: 1em 2em;
         padding: 1em;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 0.25fr;
-        /*
-        grid-template-areas:
-        "tabulka-vrch tabulka-obrazek"
-        "tabulka-spodek tabulka-obrazek"
-        "tabulka-popisek tabulka-popisek";
-        */
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
         grid-template-areas:
         "tabulka-obrazek"
         "tabulka-vrch"
@@ -159,14 +191,15 @@
         "tabulka-popisek";
         }
 
-        /* footer */
+    .cenik-tabulka h2{
+        font-size: 3em;
+    }
 
-        /*
-        grid-template-areas: 
-        "adresa . ."
-        "telefon . loga"
-        "email footer-middle sumavan";
-        */
+    .cenik-tabulka .tabulka-grid .tabulka-spodek{
+        align-items:baseline;
+    }
+
+        /* footer */
 
         .footer-grid{
             gap: 0;
