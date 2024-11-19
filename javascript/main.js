@@ -29,6 +29,64 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// 02 - nase sluzby
+// navigace
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fitnessSection = document.querySelector(".obrazky");
+    const skupinovkySection = document.querySelector(".skupinovky-hidden");
+    const navLinks = document.querySelectorAll(".nav li a");
+
+    // Nastavení výchozí sekce a aktivního odkazu
+    fitnessSection.style.display = "grid";
+    skupinovkySection.style.display = "none";
+    navLinks[0].classList.add("active"); // První odkaz je "FITNESS"
+
+    navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault(); // Zamezí přechodu na jinou stránku
+
+        // Odebereme třídu 'active' ze všech odkazů
+        navLinks.forEach((navLink) => navLink.classList.remove("active"));
+
+        // Přidáme třídu 'active' na právě kliknutý odkaz
+        link.classList.add("active");
+
+        if (link.textContent === "SKUPINOVÉ LEKCE") {
+          fitnessSection.style.display = "none"; // Skryje fitness sekci
+          skupinovkySection.style.display = "block"; // Zobrazí skupinovky
+        } else {
+          fitnessSection.style.display = "grid"; // Zobrazí fitness sekci
+          skupinovkySection.style.display = "none"; // Skryje skupinovky
+        }
+    });
+    });
+});
+
+// 02 - nase sluzby
+// klikani na karticky
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+        card.addEventListener("click", () => {
+        const front = card.querySelector(".card-front");
+        const back = card.querySelector(".card-back");
+
+        // Přepínáme viditelnost mezi přední a zadní stranou
+        if (front.style.display === "block") {
+            front.style.display = "none";
+            back.style.display = "block"; // Otočení na zadní stranu
+        } else {
+          front.style.display = "block"; // Zobrazení přední strany
+          back.style.display = "none";   // Skrytí zadní strany
+        }
+        });
+    });
+});
+
+
 // 03 - CENIK
 // klikani na buttony
 

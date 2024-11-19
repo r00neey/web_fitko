@@ -334,10 +334,9 @@ nav ul li a:visited{
     text-decoration: none;
 }
 
-.nase-sluzby .nav li a:active{
+.nase-sluzby .nav li a.active {
     color: var(--color--secondary);
 }
-
 
 .nase-sluzby .obrazky{
     display: grid;
@@ -369,6 +368,81 @@ nav ul li a:visited{
     color: black;
 }
 
+.skupinovky-hidden{
+    display: none;
+}
+
+.skupinove-lekce{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25em);
+    grid-template-areas: 
+    "crossfit crossfit bjj bjj"
+    "crossfit crossfit box trampoliny";
+    gap: 2em;
+}
+
+.skupinove-lekce .crossfit{
+    grid-area: crossfit;
+}
+
+.skupinove-lekce .bjj{
+    grid-area: bjj;
+}
+
+.skupinove-lekce .box{
+    grid-area: box;
+}
+
+.skupinove-lekce .trampoliny{
+    grid-area: trampoliny;
+}
+
+.skupinove-lekce .card p{
+    position: absolute;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.skupinove-lekce .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+
+/* TRIDY PRO JAVASCRIPT */
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}  
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none; /* Standardně skryté */
+}
+
+.card-front {
+  display: block; /* Přední strana je výchozí */
+}
+
+.card-back{
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2em;
+}
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  03 -  CENIK */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -386,7 +460,7 @@ nav ul li a:visited{
     grid-area: cenik-text;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
