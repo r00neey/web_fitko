@@ -425,20 +425,12 @@ nav ul li a:visited{
     position: absolute;
     width: 100%;
     height: 100%;
-    display: none; /* Standardně skryté */
 }
 
-.card-front {
-  display: block; /* Přední strana je výchozí */
-}
 
 .card-back{
     background: #f0f0f0;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     border-radius: 2em;
 }
 
