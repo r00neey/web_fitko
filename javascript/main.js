@@ -23,20 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('nav ul');
     const navLinks = document.querySelectorAll('nav ul li a');
-  
+
     // Zobrazení/skrytí navigace po kliknutí na hamburger
     hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
+        navMenu.classList.toggle('show');
     });
-  
+
     // Skrytí navigace po kliknutí na odkaz
     navLinks.forEach(link => {
-      link.addEventListener('click', () => {
+    link.addEventListener('click', () => {
         navMenu.classList.remove('show');
-      });
     });
-  });
-  
+    });
+});
 
 
 // 01 - o nas

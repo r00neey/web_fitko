@@ -157,6 +157,10 @@
         padding: 0 1em 0 1em;
     }
 
+    .skupinove-lekce .card h3{
+        font-size: 1.25em;
+    }
+
     /* CENÍK */
 
     .cenik .grid-cenik{
@@ -169,7 +173,6 @@
         "cenik-tabulka";
     }
 
-    /* NEVIM JESTLI UPLNE DOBRY NAPAD*/
     .cenik .grid-cenik{
         display: block;
     }
@@ -197,6 +200,12 @@
 
     .cenik-tabulka .tabulka-grid .tabulka-spodek{
         align-items:baseline;
+    }
+
+    /* TRENERI */
+
+    .treneri .treneri-cards{
+        gap: 1em;
     }
 
         /* footer */

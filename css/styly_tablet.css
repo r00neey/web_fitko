@@ -1,6 +1,13 @@
 /*media query from 1200px to 412px */
 @media (max-width: 1200px) {
     
+
+    /* NAVIGACE */
+    nav ul {
+        overflow: scroll;
+        padding: 1em;
+    }
+
     /* UVOD */
         .uvod .uvod-grid h1{
             /*font-size: 5em;*/
@@ -99,6 +106,20 @@
         gap: 2em;
     }   
 
+    .skupinove-lekce .card h3{
+        font-size: 1.5em;
+    }
+
+    .skupinove-lekce .card-front{
+        overflow: hidden;
+    }
+
+    .skupinove-lekce .card-back{
+        overflow: scroll;
+        background-color: white;
+        border-radius: 2em;
+    }
+
     /* CENÍK */
     .cenik .grid-cenik {
         display: grid;
@@ -121,6 +142,14 @@
         "tabulka-vrch tabulka-obrazek"
         "tabulka-spodek tabulka-obrazek"
         "tabulka-popisek tabulka-popisek";
+    }
+
+    .treneri .treneri-cards{
+        gap: 1em;
+    }
+
+    .navsteva-nadpis{
+        font-size: 3em;
     }
 
     /* FOOTER */
