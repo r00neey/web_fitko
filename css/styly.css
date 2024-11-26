@@ -737,13 +737,13 @@ nav ul li:first-child a:visited{
     min-height: 40em;
     max-height: 40em;
     backface-visibility: hidden;
-    overflow: scroll;
 }
 
 .card .back{
     display: none;
     background-color: white;
     color: black;
+    overflow: scroll;
 }
 
 .card.flipped .front{
