@@ -623,7 +623,7 @@ nav ul li:first-child a:visited{
 }
 
 .cenik-button {
-    border: 0px;
+    border: 0;
     background-color: black;
     color: white;
     border-radius: 1em;
