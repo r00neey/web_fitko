@@ -7,13 +7,6 @@
     <list default="true" id="ed732aee-06c2-4f8b-8178-04774258e487" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styly.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styly.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/fight arena.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/fight_arena.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/kde se nachaz°me.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/kde_se_nachazime.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/nase sluzby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/nase_sluzby.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/proc zrovna sumavan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/proc_zrovna_sumavan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/velky sal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/velky_sal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/zakladni cenik.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/zakladni_cenik.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotos/zvyhodneny cenik.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fotos/zvyhodneny_cenik.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "full.screen.before.presentation.mode": "false",
@@ -63,6 +57,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_fitko/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -108,6 +112,7 @@
       <workItem from="1734182196316" duration="1643000" />
       <workItem from="1734634085922" duration="871000" />
       <workItem from="1734636536621" duration="5150000" />
+      <workItem from="1734692747502" duration="3587000" />
     </task>
     <servers />
   </component>

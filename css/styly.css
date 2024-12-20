@@ -525,9 +525,9 @@ nav ul li:first-child a:visited{
 .cenik-tabulka .tabulka-grid {
     font-family: 'Anton', sans-serif;
     gap: 1em 2em;
-    padding: 1em;
+    padding: 1.5em;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 2fr 2fr 0.5fr;
     grid-template-areas:
         "tabulka-vrch tabulka-obrazek"
@@ -550,7 +550,7 @@ nav ul li:first-child a:visited{
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    padding: 0.375em 0;
+    padding: 0.25em 0;
     border-top: 2px solid black;
     font-weight: 900;
     font-size: 1.15em;
