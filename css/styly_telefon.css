@@ -155,6 +155,7 @@
         overflow: scroll;
         gap: 3em;
         padding: 0 1em 0 1em;
+        justify-content: space-between;
     }
 
     .skupinove-lekce .card h3{

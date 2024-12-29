@@ -37,11 +37,13 @@ body{
 }
 
 .color-primary{color: var(--color--primary);}
+.color-secondary{color: var(--color--secondary);}
 .p-uvod{padding: 4em 0 2em 0;}
 .p-sekce{padding: 2em 0;}
 .p-reset{padding: 0 !important;}
 .text-bold{font-weight: 900;}
 .text-bigger{font-size: 1.125rem;}
+.padding-rl{padding: 0 0.5em 0 0.5em;}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  UVOD  */
@@ -602,7 +604,7 @@ nav ul li:first-child a:visited{
 }
 
 .maly-text{
-    font-size: 0.75em;
+    font-size: 0.5em;
 }
 
 .cenik-button {
@@ -629,9 +631,10 @@ nav ul li:first-child a:visited{
 }
 
 .skrtnute{
-    text-decoration: line-through 1px solid red;
+    text-decoration: line-through 1px solid;
+    text-decoration-color: var(--color--secondary);
     -webkit-text-decoration-line: line-through;
-    -webkit-text-decoration-color: red;
+    -webkit-text-decoration-color: var(--color--primary);
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
