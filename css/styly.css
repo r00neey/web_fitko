@@ -40,6 +40,8 @@ body{
 .p-uvod{padding: 4em 0 2em 0;}
 .p-sekce{padding: 2em 0;}
 .p-reset{padding: 0 !important;}
+.text-bold{font-weight: 900;}
+.text-bigger{font-size: 1.125rem;}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  UVOD  */
@@ -593,7 +595,7 @@ nav ul li:first-child a:visited{
 .cenik-tabulka .tabulka-popisek {
     grid-area: tabulka-popisek;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2em;
     padding: 1em;
