@@ -628,6 +628,12 @@ nav ul li:first-child a:visited{
     transform: rotate(180deg);
 }
 
+.skrtnute{
+    text-decoration: line-through 1px solid red;
+    -webkit-text-decoration-line: line-through;
+    -webkit-text-decoration-color: red;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  04 -  NASI TRENERI */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
