@@ -16,7 +16,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 4em; /* Uprav podle výšky navigace */
+        top: 6em; /* Uprav podle výšky navigace */
         right: 1em;
         background-color: white;
         padding: 1em;
@@ -41,6 +41,7 @@
         position: absolute;
         top: 1em;
         right: 1em;
+        color: white;
     }
 
     /* Při zobrazení menu */
