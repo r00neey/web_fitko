@@ -833,3 +833,12 @@ nav ul li:first-child a:visited{
     font-weight: 900;
     font-size: 1.125em;
 }
+
+/*
+    Provizorní řešení
+    (pouzito jenom u 01 - NECO MALO O NAS)
+*/
+.ikonka-test{
+    width: 5rem;
+    margin-left: auto;
+}
