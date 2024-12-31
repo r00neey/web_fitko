@@ -112,22 +112,23 @@ nav ul li:first-child a:visited{
 .sekce-nadpis h2:nth-child(2){
     font-size: 1.5em;
     font-weight: 900;
-    border-radius: 0.5em;
+    border-radius: 1.5em;
     background-color: var(--color--primary);
     color: var(--color--background);
-    padding: 0.5em;
-    width: 60%;
+    padding: 0.5em 1em;
+    width: 40vw;
 }
 
 
 .uvod .uvod-grid{
     background-image: url("../fotos/uvodni_foto.jpg");
     background-size: cover;
-    height: 90vh;
+    gap: 2em;
+    height: 85vh;
     display: grid;
     background-position: center;
     border-radius: 2em;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.5fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
         "nazev nazev nazev"
@@ -138,7 +139,7 @@ nav ul li:first-child a:visited{
 
 .uvod .uvod-grid h1{
     grid-area: nazev;
-    font-size: 10em;
+    font-size: 8.333vw;
     font-weight: 900;
     margin-top: -0.75em;
     color: var(--color--secondary);
@@ -148,31 +149,33 @@ nav ul li:first-child a:visited{
 
 .uvod .uvod-grid .text-hlavni{
     grid-area: text-hlavni;
-    font-size: 4em;
+    font-size: 3.333vw;
     font-weight: 900;
-    padding: 2em 1em;
+    color: blue;
+    padding-left: 3rem;
 }
 
 .uvod .uvod-grid .text-vedlejsi{
     grid-area: text-vedlejsi;
-    font-size: 1.5em;
-    padding: 0 2em;
+    font-size: 1.2495vw;
+    color: blue;
+    padding-left: 3rem;
 }
 
 .uvod .uvod-grid .oteviraci-doba{
     grid-area: oteviraci-doba;
-    font-size: 1.25em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 2rem;
 }
 
 .uvod .uvod-grid .oteviraci-doba .casy{
     background-color: var(--color--primary);
     color: var(--color--tertiary);
     border-radius: 2em;
-    padding: 1.25em;
+    padding: 1em;
+    text-align: center;
+    width: 25vw;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -182,6 +185,7 @@ nav ul li:first-child a:visited{
 .o-nas .popis{
     line-height: 2em;
     font-size: 1.25em;
+    width: 50vw;
 }
 
 .o-nas .o-nas-grid{
@@ -647,15 +651,15 @@ nav ul li:first-child a:visited{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 4em;
-    justify-content: center;
 }
 
 .treneri .card{
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25em;
+    flex-basis: 33%;
     cursor: pointer;
+    overflow: hidden;
+    padding: 1em;
 }
 
 .treneri .treneri-cards .card .name{
@@ -672,6 +676,7 @@ nav ul li:first-child a:visited{
     width: 100%;
     height: auto;
     border-radius: 2em;
+    aspect-ratio: 0.67/1;
 }
 
 .hidden{
@@ -724,19 +729,13 @@ nav ul li:first-child a:visited{
 
 /* Tridy pro javascript */
 
-.card .front, .card .back{
-    width: 100%;
-    height: 100%;
-    min-height: 40em;
-    max-height: 40em;
-    backface-visibility: hidden;
-}
-
 .card .back{
     display: none;
     background-color: white;
     color: black;
     overflow: scroll;
+    max-width: 33vw;
+    aspect-ratio: 0.67/1;
 }
 
 .card.flipped .front{
