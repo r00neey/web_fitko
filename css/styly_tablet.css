@@ -10,26 +10,32 @@
 
     /* UVOD */
         .uvod .uvod-grid h1{
-            /*font-size: 5em;*/
-            font-size: calc(4rem + 2vw)
+            font-size: 12vw;
         }
-        .uvod .uvod-grid .text-hlavni{display: none;}
         .uvod .uvod-grid .text-vedlejsi{display: none;}
 
         .uvod .uvod-grid{
-            grid-template-columns: 2fr 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
+            background-image: url(../fotos/tablet_uvodni_foto.jpeg);
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: 5em 1fr 1fr;
             grid-template-areas:
             "nazev nazev nazev"
-            ". . ."
+            "text-hlavni . ."
             ". oteviraci-doba oteviraci-doba";
+            gap: 5em;
+        }
+
+        .uvod .uvod-grid .text-hlavni{
+            grid-area: text-hlavni;
+            color: white;
+            font-size: 5vw;
         }
 
         .uvod .uvod-grid .oteviraci-doba{
-            align-items:end;
-            justify-content:end;
-            padding: 1em;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
         }
 
         .uvod .uvod-grid .oteviraci-doba .casy{
@@ -38,53 +44,54 @@
         }
 
     /* O NÁS */
+
+        .o-nas .popis{
+            width: 100%;
+        }
+
+        .ikonka-test{
+            display: none;
+        }
+
+        .o-nas .o-nas-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
         .o-nas .o-nas-grid .kde-se-nachazime{
             grid-column-start: 1;
-            grid-column-end: 6;
+            grid-column-end: 1;
             grid-row-start: 1;
-            grid-row-end: 6;
+            grid-row-end: 1;
         }
 
         .o-nas .o-nas-grid .proc-zrovna-sumavan{
-            grid-column-start: 6;
-            grid-column-end: 18;
+            grid-column-start: 2;
+            grid-column-end: 2;
             grid-row-start: 1;
-            grid-row-end: 4;
+            grid-row-end: 1;
         }
 
         .o-nas .o-nas-grid .vybaveni{
-            grid-column-start: 10;
-            grid-column-end: 17;
-            grid-row-start: 6;
-            grid-row-end: 11;
-        }
-
-        .o-nas .o-nas-grid .chci-si-precist-vic{
-            grid-column-start: 6;
-            grid-column-end: 18;
-            grid-row-start: 4;
-            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
         }
 
         .o-nas .o-nas-grid .nase-sluzby{
             grid-column-start: 1;
-            grid-column-end: 10;
-            grid-row-start: 6;
-            grid-row-end: 10;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
         }
 
         .o-nas .o-nas-grid .prostory{
             grid-column-start: 1;
-            grid-column-end: 10;
-            grid-row-start: 10;
-            grid-row-end: 13;
-        }
-
-        .o-nas .o-nas-grid .koupit-clenstvi{
-            grid-column-start: 10;
-            grid-column-end: 17;
-            grid-row-start: 11;
-            grid-row-end: 13;
+            grid-column-end: 1;
+            grid-row-start: 3;
+            grid-row-end: 3;
         }
 
     /* NASE SLUŽBY */
@@ -121,14 +128,25 @@
     }
 
     /* CENÍK */
-    .cenik .grid-cenik {
-        display: grid;
-        gap: 1em;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cenik-text cenik-tabulka"
+    .cenik .grid-cenik{
+        display: block;
+        padding: 1em 0;
     }
+
+    .cenik .cenik-text{
+        display: block;
+    }
+
+    .cenik .obrazek-podpis{
+        align-items: center;
+    }
+
+    .cenik .cenik-text img{
+        width: 500px;
+        height: auto;
+        margin: 5em 0;
+    }
+    
 
     /* MUSI TU BYT? .cenik-tabulka .tabulka-grid ?*/
 
@@ -144,8 +162,12 @@
         "tabulka-popisek tabulka-popisek";
     }
 
-    .treneri .treneri-cards{
-        gap: 1em;
+    .treneri .card{
+        flex-basis: 50%;
+    }
+
+    .card .back{
+        max-width: 50vw;
     }
 
     .navsteva-nadpis{
