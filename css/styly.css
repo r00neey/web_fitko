@@ -14,18 +14,26 @@ html{scroll-behavior: smooth;}
     --color--background: #1A1A1A;
 }
 
+@font-face{
+    font-family: 'Anton';
+    src: url("../font/Anton-Regular.ttf") format('truetype');
+    font-weight: regular;
+}
+
+
 body{
     color: var(--color--primary);
     background-color: var(--color--background);
-    font-family: montserrat, serif;
+    /**/
+    font-family: 'Anton', sans-serif;
     padding: 0 4vw;
     line-height: 1.5;
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.font-anton{
-    font-family: 'Anton', sans-serif;
+.font-secondary{
+    font-family: montserrat, serif;
 }
 
 .zvyrazneni{
@@ -144,22 +152,21 @@ nav ul li:first-child a:visited{
     margin-top: -0.75em;
     color: var(--color--secondary);
     text-align: center;
-    transform: scaleY(1.25);
 }
 
 .uvod .uvod-grid .text-hlavni{
     grid-area: text-hlavni;
     font-size: 3.333vw;
     font-weight: 900;
-    color: blue;
     padding-left: 3rem;
+    color: black;
 }
 
 .uvod .uvod-grid .text-vedlejsi{
     grid-area: text-vedlejsi;
     font-size: 1.2495vw;
-    color: blue;
     padding-left: 3rem;
+    color: black;
 }
 
 .uvod .uvod-grid .oteviraci-doba{
@@ -504,9 +511,22 @@ nav ul li:first-child a:visited{
         "cenik-text cenik-tabulka"
 }
 
+.obrazek-podpis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .obrazek-podpis img{
     width: 100%;
     height: 100%;
+    text-align: right;
+}
+
+.obrazek-podpis .podpis-p{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
 }
 
 .cenik .cenik-text {
@@ -528,6 +548,7 @@ nav ul li:first-child a:visited{
     text-align: center;
     font-size: 4em;
     font-weight: 900;
+    padding-top: 1rem;
 }
 
 .cenik-tabulka .tabulka-grid {
@@ -560,8 +581,7 @@ nav ul li:first-child a:visited{
     gap: 1em;
     padding: 0.25em 0;
     border-top: 2px solid black;
-    font-weight: 900;
-    font-size: 1.15em;
+    font-size: 1.5em;
 }
 
 .cenik-tabulka .tabulka-vrch tr:last-child {
@@ -580,8 +600,7 @@ nav ul li:first-child a:visited{
     gap: 1em;
     padding: 0.375em 0;
     border-top: 2px solid black;
-    font-weight: 900;
-    font-size: 1.15em;
+    font-size: 1.5em;
 }
 
 .cenik-tabulka .tabulka-spodek tr:last-child {

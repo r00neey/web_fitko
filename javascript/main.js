@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 02 - nase sluzby
 // klikani na karticky
-
+//ZDE DAT PAK FLEX
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
 
