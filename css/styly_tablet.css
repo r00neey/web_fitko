@@ -9,92 +9,92 @@
     }
 
     /* UVOD */
-        .uvod .uvod-grid h1{
-            font-size: 12vw;
-        }
-        .uvod .uvod-grid .text-vedlejsi{display: none;}
+    .uvod .uvod-grid h1{
+        font-size: 12vw;
+    }
+    .uvod .uvod-grid .text-vedlejsi{display: none;}
 
-        .uvod .uvod-grid{
-            background-image: url(../fotos/tablet_uvodni_foto.jpeg);
-            grid-template-columns: 3fr 1fr 1fr;
-            grid-template-rows: 5em 1fr 1fr;
-            grid-template-areas:
-            "nazev nazev nazev"
-            "text-hlavni . ."
-            "oteviraci-doba oteviraci-doba oteviraci-doba";
-            gap: 5em;
-            height: 70vh;
-        }
+    .uvod .uvod-grid{
+        background-image: url(../fotos/tablet_uvodni_foto.jpeg);
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 5em 1fr 1fr;
+        grid-template-areas:
+        "nazev nazev nazev"
+        "text-hlavni . ."
+        "oteviraci-doba oteviraci-doba oteviraci-doba";
+        gap: 5em;
+        height: 70vh;
+    }
 
-        .uvod .uvod-grid .text-hlavni{
-            grid-area: text-hlavni;
-            color: white;
-            font-size: 5vw;
-        }
+    .uvod .uvod-grid .text-hlavni{
+        grid-area: text-hlavni;
+        color: white;
+        font-size: 5vw;
+    }
 
-        .uvod .uvod-grid .oteviraci-doba{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: end;
-            padding: 1em;
-        }
+    .uvod .uvod-grid .oteviraci-doba{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        padding: 1em;
+    }
 
-        .uvod .uvod-grid .oteviraci-doba .casy{
-            padding: 1em 2em;
-            border-radius: 1em;
-        }
+    .uvod .uvod-grid .oteviraci-doba .casy{
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
 
-    /* O NÁS */
+/* O NÁS */
 
-        .o-nas .popis{
-            width: 100%;
-        }
+    .o-nas .popis{
+        width: 100%;
+    }
 
-        .ikonka-test{
-            display: none;
-        }
+    .ikonka-test{
+        display: none;
+    }
 
-        .o-nas .o-nas-grid{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
+    .o-nas .o-nas-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-        .o-nas .o-nas-grid .kde-se-nachazime{
-            grid-column-start: 1;
-            grid-column-end: 1;
-            grid-row-start: 1;
-            grid-row-end: 1;
-        }
+    .o-nas .o-nas-grid .kde-se-nachazime{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
 
-        .o-nas .o-nas-grid .proc-zrovna-sumavan{
-            grid-column-start: 2;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 1;
-        }
+    .o-nas .o-nas-grid .proc-zrovna-sumavan{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
 
-        .o-nas .o-nas-grid .vybaveni{
-            grid-column-start: 2;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 4;
-        }
+    .o-nas .o-nas-grid .vybaveni{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
 
-        .o-nas .o-nas-grid .nase-sluzby{
-            grid-column-start: 1;
-            grid-column-end: 1;
-            grid-row-start: 2;
-            grid-row-end: 2;
-        }
+    .o-nas .o-nas-grid .nase-sluzby{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
 
-        .o-nas .o-nas-grid .prostory{
-            grid-column-start: 1;
-            grid-column-end: 1;
-            grid-row-start: 3;
-            grid-row-end: 3;
-        }
+    .o-nas .o-nas-grid .prostory{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
 
     /* NASE SLUŽBY */
 
@@ -143,7 +143,7 @@
     }
 
     .cenik .cenik-text img{
-        width: 500px;
+        max-width: 500px;
         height: auto;
         margin: 5em 0;
     }
