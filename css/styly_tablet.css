@@ -21,8 +21,9 @@
             grid-template-areas:
             "nazev nazev nazev"
             "text-hlavni . ."
-            ". oteviraci-doba oteviraci-doba";
+            "oteviraci-doba oteviraci-doba oteviraci-doba";
             gap: 5em;
+            height: 70vh;
         }
 
         .uvod .uvod-grid .text-hlavni{
@@ -36,6 +37,7 @@
             flex-direction: column;
             justify-content: end;
             align-items: end;
+            padding: 1em;
         }
 
         .uvod .uvod-grid .oteviraci-doba .casy{
@@ -97,8 +99,7 @@
     /* NASE SLUŽBY */
 
     .nase-sluzby .nav li{
-        font-size: 1.5em;
-        font-weight: 900;
+        font-size: 2em;
         padding: 2em 0;
         color: gray;
     }
@@ -175,6 +176,13 @@
     }
 
     /* FOOTER */
+    .footer-grid{
+        grid-template-areas: 
+        "adresa . ."
+        "telefon . loga"
+        "email email sumavan";
+    }
+
     .footer-grid .footer-middle {
         display: none;
     }

@@ -16,7 +16,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 6em; /* Uprav podle výšky navigace */
+        top: 8em; /* Uprav podle výšky navigace */
         right: 1em;
         background-color: white;
         padding: 1em;
@@ -36,12 +36,12 @@
         display: block;
         background: none;
         border: none;
-        font-size: 2em;
+        font-size: 4em;
         cursor: pointer;
         position: absolute;
-        top: 1em;
-        right: 1em;
-        color: white;
+        top: 0.5em;
+        right: 0.5em;
+        color: #3A3A3A;
     }
 
     /* Při zobrazení menu */
@@ -53,25 +53,26 @@
 
     .uvod .uvod-grid{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 15em 1fr 1fr;
         grid-template-areas:
         "nazev nazev nazev"
         "text-hlavni text-hlavni ."
-        /*"text-vedlejsi . ."*/
         "oteviraci-doba oteviraci-doba oteviraci-doba";
+        gap: 0;
+        height: 50vh;
     }
 
     .uvod .uvod-grid h1{
         /*font-size: 4em; */
-        font-size: calc(3rem + 2vw);
+        font-size: 20vw;
         text-align: left;
-        padding-left: 0.125em;
+        padding-left: 1rem;
     }
 
     .uvod .uvod-grid .text-hlavni{
         display: block;
-        font-size: 1.5em;
-        font-weight: 900;
+        font-size: 7.5vw;
+        padding-left: 1rem;
     }
 
     .uvod .uvod-grid .oteviraci-doba{
@@ -86,7 +87,7 @@
     .uvod .uvod-grid .oteviraci-doba .casy{
         text-align: center;
         grid-area: oteviraci-doba;
-        font-size: 1em;  
+        font-size: 5vw;  
     }
 
     /* O NÁS */
