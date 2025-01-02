@@ -59,7 +59,7 @@
         "text-hlavni text-hlavni ."
         "oteviraci-doba oteviraci-doba oteviraci-doba";
         gap: 0;
-        height: 50vh;
+        height: 80vh;
     }
 
     .uvod .uvod-grid h1{
@@ -99,6 +99,7 @@
     .o-nas .o-nas-grid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);;
+        min-height: 150vh;
     }    
 
     .o-nas .o-nas-grid .kde-se-nachazime{
