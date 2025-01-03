@@ -147,7 +147,34 @@
         height: auto;
         margin: 5em 0;
     }
-    
+
+    .nase-sluzby .obrazky{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "leva-karta"
+        "prava-karta";
+        gap: 2em;
+    }   
+
+    .nase-sluzby .obrazky .obrazky-card img{
+        border-radius: 2em;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .nase-sluzby .obrazky .obrazky-card .back-fotky-treneri{
+        flex-wrap: nowrap;
+    }
+
+    .nase-sluzby .obrazky .obrazky-card .back-fotky-treneri img{
+        object-position: top;
+        border-radius: 999em;
+        height: 100px;
+        width: 100px;
+    }
+
 
     /* MUSI TU BYT? .cenik-tabulka .tabulka-grid ?*/
 
