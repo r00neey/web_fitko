@@ -138,3 +138,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+// 02 - nase sluzby
+// velky sal + fight arena
+
+document.addEventListener("DOMContentLoaded", function() {
+    var cards = document.querySelectorAll(".obrazky-card .card2");
+
+    cards.forEach(function(card) {
+        card.addEventListener("click", function() {
+            card.classList.toggle("karta-sluzby-back");
+        });
+    });
+});
