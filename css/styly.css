@@ -818,16 +818,16 @@ nav ul li:first-child a:visited{
 .card .back h3{
     font-size: 2em;
     font-weight: normal;
-    padding: 1em 0 0 1em;
+    padding: 2rem 0 0 2rem;
 }
 
 .card .back p:first-of-type{
     font-size: 1.25em;
-    padding: 0 0 1rem 1.5rem;
+    padding: 0 0 1rem 2rem;
 }
 
 .card .back p{
-    padding: 1em;
+    padding: 2rem;
     font-size: 1.25rem;
 }
 
