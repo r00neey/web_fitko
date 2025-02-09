@@ -1,0 +1,312 @@
+CSS !!!
+.nase-sluzby .obrazky{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "leva-karta prava-karta";
+    gap: 2em;
+}   
+
+.nase-sluzby .obrazky .obrazky-card img{
+    border-radius: 2em;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+}
+
+.nase-sluzby .obrazky .obrazky-card .leva-karta{
+    height: 100%;
+}
+.nase-sluzby .obrazky .obrazky-card .prava-karta{
+    height: 100%;
+}
+
+.nase-sluzby .obrazky .obrazky-card p{
+    position: absolute;
+    padding: 2rem 0 0 2rem;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+}
+
+.skupinovky-hidden{
+    display: none;
+}
+
+.skupinove-lekce{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25em);
+    grid-template-areas: 
+    "crossfit crossfit bjj bjj"
+    "crossfit crossfit box trampoliny";
+    gap: 2em;
+}
+
+.skupinove-lekce .crossfit{
+    grid-area: crossfit;
+}
+
+.skupinove-lekce .bjj{
+    grid-area: bjj;
+}
+
+.skupinove-lekce .box{
+    grid-area: box;
+}
+
+.skupinove-lekce .trampoliny{
+    grid-area: trampoliny;
+}
+
+.skupinove-lekce .card h3{
+    position: absolute;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.skupinove-lekce .card-back h3{
+    position: relative;
+    color: black;
+}
+
+.skupinove-lekce .card p{
+    padding: 1rem;
+}
+
+.skupinove-lekce .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+
+.skupinove-lekce .card .card-back-treneri p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.skupinove-lekce .card .card-back-treneri img{
+    padding: 1em;
+    max-width: 100px;
+    border-radius: 2em;
+}
+
+.skupinove-lekce .card .card-back-treneri-button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.skupinove-lekce .card .card-back-treneri-button{
+    border-radius: 2em;
+    background-color: var(--color--secondary);
+    width: fit-content;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.skupinove-lekce .card .card-back-treneri-button button{
+    border: none;
+    background-color: var(--color--secondary);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.skupinove-lekce .card .card-back-treneri-button img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.card2 .front{
+    height: 100%;
+}
+
+/* TRIDY PRO JAVASCRIPT */
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}  
+
+.card-front{
+    display: block;
+}
+.card-back{
+    display: none;
+    background-color: white;
+    color: #333;
+    border-radius: 2em;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card2.karta-sluzby-back .front{
+    display: none;
+}
+
+.card2 .back{
+    display: none;
+    background-color: white;
+    height: 100%;
+}
+
+.card2.karta-sluzby-back .back{
+    display: flex;
+    border-radius: 2em;
+}
+
+.card2.karta-sluzby-back{
+    height: 100%;
+}
+
+.card2.karta-sluzby-back .back h3{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+}
+
+.card2.karta-sluzby-back .back p{
+    padding: 0;
+    font-weight: normal;
+    font-size: 1em;
+    color: black;
+    position: relative;
+}
+
+.card2.karta-sluzby-back .back img{
+    width: 7.5em;
+    aspect-ratio: 0.67/1;
+}
+
+.card2.karta-sluzby-back .back .button-wrapper{
+    margin-left: auto;
+    margin: 0 2em 2em auto;
+    background-color: var(--color--secondary);
+    border-radius: 2em;
+}
+
+.card2.karta-sluzby-back .back .button-wrapper img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.card2.karta-sluzby-back .back .button-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--color--secondary);
+    padding: 0.5em 1em;
+    border-radius: 4em;
+}
+
+.card2.karta-sluzby-back .back .button-wrapper a:visited, .card2.karta-sluzby-back .back .button-wrapper a:link, .card2.karta-sluzby-back .back .button-wrapper a:active, .card2.karta-sluzby-back .back .button-wrapper a:hover{
+    text-decoration: none;
+}
+
+.card2.karta-sluzby-back .back .button-wrapper a button{
+    border-radius: 2em;
+    font-family: 'Anton', sans-serif;
+    border: 0;
+    font-size: 1em;
+    color: var(--color--primary);
+    background-color: var(--color--secondary);
+    cursor: pointer;
+}
+
+.card2.karta-sluzby-back .help-class{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2rem 2rem 0 2rem;
+    justify-content: space-between;
+
+}
+
+.card2.karta-sluzby-back .back-fotky-treneri{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+HTML
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+JAVASCRIPT
+// navigace
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fitnessSection = document.querySelector(".obrazky");
+    const skupinovkySection = document.querySelector(".skupinovky-hidden");
+    const navLinks = document.querySelectorAll(".nav li a");
+
+    // Nastavení výchozí sekce a aktivního odkazu
+    fitnessSection.style.display = "grid";
+    skupinovkySection.style.display = "none";
+    navLinks[0].classList.add("active"); // První odkaz je "FITNESS"
+
+    navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault(); // Zamezí přechodu na jinou stránku
+
+        // Odebereme třídu 'active' ze všech odkazů
+        navLinks.forEach((navLink) => navLink.classList.remove("active"));
+
+        // Přidáme třídu 'active' na právě kliknutý odkaz
+        link.classList.add("active");
+
+        if (link.textContent === "SKUPINOVÉ LEKCE") {
+          fitnessSection.style.display = "none"; // Skryje fitness sekci
+          skupinovkySection.style.display = "block"; // Zobrazí skupinovky
+        } else {
+          fitnessSection.style.display = "grid"; // Zobrazí fitness sekci
+          skupinovkySection.style.display = "none"; // Skryje skupinovky
+        }
+    });
+    });
+});
+
+// 02 - nase sluzby
+// klikani na karticky
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+        card.addEventListener("click", () => {
+        const front = card.querySelector(".card-front");
+        const back = card.querySelector(".card-back");
+
+        // Přepínáme viditelnost mezi přední a zadní stranou
+        if (front.style.display === "block") {
+            front.style.display = "none";
+            back.style.display = "block"; // Otočení na zadní stranu
+        } else {
+          front.style.display = "block"; // Zobrazení přední strany
+          back.style.display = "none";   // Skrytí zadní strany
+        }
+        });
+    });
+});

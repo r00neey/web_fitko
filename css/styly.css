@@ -274,17 +274,6 @@ nav ul li:first-child a:visited{
     background-image: url("../fotos/prostory.jpg");
 }
 
-.o-nas .o-nas-grid .koupit-clenstvi{
-    grid-column-start: 13;
-    grid-column-end: 17;
-    grid-row-start: 11;
-    grid-row-end: 13;
-    background-color: #DC635A;
-    border-radius: 90em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .o-nas .o-nas-grid .koupit-clenstvi h3{
     color: white;
@@ -346,254 +335,101 @@ nav ul li:first-child a:visited{
     color: var(--color--secondary);
 }
 
-.nase-sluzby .obrazky{
+.sluzby-grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "leva-karta prava-karta";
-    gap: 2em;
-}   
-
-.nase-sluzby .obrazky .obrazky-card img{
-    border-radius: 2em;
-    width: 100%;
-    height: 100%;
-    max-height: 50vh;
-}
-
-.nase-sluzby .obrazky .obrazky-card .leva-karta{
-    height: 100%;
-}
-.nase-sluzby .obrazky .obrazky-card .prava-karta{
-    height: 100%;
-}
-
-.nase-sluzby .obrazky .obrazky-card p{
-    position: absolute;
-    padding: 2rem 0 0 2rem;
-    font-size: 1.5em;
-    font-weight: 900;
-    color: white;
-}
-
-.skupinovky-hidden{
-    display: none;
-}
-
-.skupinove-lekce{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 25em);
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "crossfit crossfit bjj bjj"
-    "crossfit crossfit box trampoliny";
-    gap: 2em;
+    "posilovna posilovna kruhovy-trenink"
+    "corefit-women pilates pohybove-hry";
+    height: 85vh;
 }
 
-.skupinove-lekce .crossfit{
-    grid-area: crossfit;
+.sluzby-grid .posilovna{
+    grid-area: posilovna;
+    background-image: url("../fotos02/posilovna.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.skupinove-lekce .bjj{
-    grid-area: bjj;
+.sluzby-grid .kruhovy-trenink{
+    grid-area: kruhovy-trenink;
+    background-image: url("../fotos02/kruhovy-trenink.jpg");
+    background-size: cover;
 }
 
-.skupinove-lekce .box{
-    grid-area: box;
+.sluzby-grid .corefit-women{
+    grid-area: corefit-women;
+    background-image: url("../fotos02/corefit-women.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.skupinove-lekce .trampoliny{
-    grid-area: trampoliny;
+.sluzby-grid .pilates{
+    grid-area: pilates;
+    background-image: url("../fotos02/pilates.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.skupinove-lekce .card h3{
-    position: absolute;
-    color: black;
-    font-size: 2em;
-    font-weight: bold;
-    padding: 1rem;
+.sluzby-grid .pohybove-hry{
+    grid-area: pohybove-hry;
+    background-image: url("../fotos02/pohybove-hry.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.skupinove-lekce .card-back h3{
-    position: relative;
-    color: black;
+.sluzby-grid .nadpis{
+    padding: 2rem;
+    font-size: 2rem;
 }
 
-.skupinove-lekce .card p{
-    padding: 1rem;
-}
-
-.skupinove-lekce .card img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2em;
-}
-
-.skupinove-lekce .card .card-back-treneri p{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: black;
-}
-
-.skupinove-lekce .card .card-back-treneri img{
-    padding: 1em;
-    max-width: 100px;
-    border-radius: 2em;
-}
-
-.skupinove-lekce .card .card-back-treneri-button{
+.sluzby-grid .back{
     display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 1em;
-    padding: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.skupinove-lekce .card .card-back-treneri-button{
-    border-radius: 2em;
-    background-color: var(--color--secondary);
-    width: fit-content;
-    margin: 1rem;
-    cursor: pointer;
+.sluzby-grid .back .rozvrh-button{
+    margin-top: auto;
+    align-self: end;
+    padding: 2em 3em;
 }
 
-.skupinove-lekce .card .card-back-treneri-button button{
-    border: none;
+.sluzby-grid .back .rozvrh-button button{
     background-color: var(--color--secondary);
     color: white;
-    font-weight: bold;
-    font-size: 1em;
-    padding: 1em;
-    border-radius: 2em;
+    border: none;
+    border-radius: 5em;
+    padding: 1.5rem 6rem;
     cursor: pointer;
-}
-
-.skupinove-lekce .card .card-back-treneri-button img{
-    max-width: 40px;
-    max-height: 40px;
-}
-
-.card2 .front{
-    height: 100%;
-}
-
-/* TRIDY PRO JAVASCRIPT */
-
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}  
-
-.card-front{
-    display: block;
-}
-.card-back{
-    display: none;
-    background-color: white;
-    color: #333;
-    border-radius: 2em;
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-
-.card2.karta-sluzby-back .front{
-    display: none;
-}
-
-.card2 .back{
-    display: none;
-    background-color: white;
-    height: 100%;
-}
-
-.card2.karta-sluzby-back .back{
     display: flex;
-    border-radius: 2em;
-}
-
-.card2.karta-sluzby-back{
-    height: 100%;
-}
-
-.card2.karta-sluzby-back .back h3{
-    font-size: 1.5em;
-    font-weight: 900;
-    color: black;
-}
-
-.card2.karta-sluzby-back .back p{
-    padding: 0;
-    font-weight: normal;
-    font-size: 1em;
-    color: black;
-    position: relative;
-}
-
-.card2.karta-sluzby-back .back img{
-    width: 7.5em;
-    aspect-ratio: 0.67/1;
-}
-
-.card2.karta-sluzby-back .back .button-wrapper{
-    margin-left: auto;
-    margin: 0 2em 2em auto;
-    background-color: var(--color--secondary);
-    border-radius: 2em;
-}
-
-.card2.karta-sluzby-back .back .button-wrapper img{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    padding: 1rem;
-}
-
-.card2.karta-sluzby-back .back .button-wrapper a {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1em;
-    background-color: var(--color--secondary);
-    padding: 0.5em 1em;
+}
+
+.sluzby-grid .back .rozvrh-button button img{
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 99em;
+}
+
+.sluzby-grid .nadpis-back{
+    padding: 1rem;
+    font-size: 2em;
+}
+
+.sluzby-grid div{
     border-radius: 4em;
 }
 
-.card2.karta-sluzby-back .back .button-wrapper a:visited, .card2.karta-sluzby-back .back .button-wrapper a:link, .card2.karta-sluzby-back .back .button-wrapper a:active, .card2.karta-sluzby-back .back .button-wrapper a:hover{
-    text-decoration: none;
+.sluzby-grid div p{
+    font-weight: normal;
+    padding: 1rem;
+    font-size: 1.25em;
 }
 
-.card2.karta-sluzby-back .back .button-wrapper a button{
-    border-radius: 2em;
-    font-family: 'Anton', sans-serif;
-    border: 0;
-    font-size: 1em;
-    color: var(--color--primary);
-    background-color: var(--color--secondary);
-    cursor: pointer;
-}
-
-.card2.karta-sluzby-back .help-class{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 2rem 2rem 0 2rem;
-    justify-content: space-between;
-
-}
-
-.card2.karta-sluzby-back .back-fotky-treneri{
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    flex-wrap: wrap;
-}
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  03 -  CENIK */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
