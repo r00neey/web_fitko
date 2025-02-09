@@ -427,7 +427,7 @@ nav ul li:first-child a:visited{
 
 .sluzby-grid .nadpis-back, .kardio-grid .nadpis-back, .protazeni-grid .nadpis-back{
     padding: 1rem;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .sluzby-grid div, .kardio-grid div, .protazeni-grid div{
@@ -453,7 +453,7 @@ nav ul li:first-child a:visited{
 
 .kardio-grid .hiit{
     grid-area: hiit;
-    background-image: url("../fotos02/hiit.jpg");
+    background-image: url("../fotos02/HIIT.jpg");
     background-size: cover;
 }
 
