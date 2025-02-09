@@ -431,7 +431,7 @@ nav ul li:first-child a:visited{
 }
 
 .sluzby-grid div, .kardio-grid div, .protazeni-grid div{
-    border-radius: 4em;
+    border-radius: 2em;
 }
 
 .sluzby-grid div p, .kardio-grid div p, .protazeni-grid div p{
