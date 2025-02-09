@@ -52,11 +52,50 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // 02 - nase sluzby
 // navigace
+document.addEventListener("DOMContentLoaded", function() {
+    // Přidáme event listener pro všechny odkazy v navigaci
+    document.querySelectorAll(".nav a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault(); // Zabráníme defaultnímu chování odkazu
+
+            // Skryjeme všechny gridy
+            document.querySelectorAll(".sluzby-grid, .kardio-grid, .protazeni-grid, .obrazky-card").forEach(grid => {
+                grid.classList.add("hidden");
+            });
+
+            // Zobrazíme pouze ten grid, na který bylo kliknuto
+            const targetGrid = document.querySelector(`.${this.getAttribute("data-target")}`);
+            if (targetGrid) {
+                targetGrid.classList.remove("hidden");
+            }
+
+            // Odebereme třídu .active ze všech odkazů
+            document.querySelectorAll(".nav a").forEach(link => {
+                link.classList.remove("active");
+            });
+
+            // Přidáme třídu .active aktuálnímu odkazu
+            this.classList.add("active");
+        });
+    });
+
+    // Zobrazíme výchozí grid při načtení stránky
+    const defaultGrid = document.querySelector(".sluzby-grid");
+    if (defaultGrid) {
+        defaultGrid.classList.remove("hidden");
+    }
+
+    // Nastavíme výchozí aktivní odkaz
+    const defaultLink = document.querySelector('.nav a[data-target="sluzby-grid"]');
+    if (defaultLink) {
+        defaultLink.classList.add("active");
+    }
+});
 
 
 //02 - karticky
 document.addEventListener("DOMContentLoaded", function() {
-    var cards = document.querySelectorAll(".sluzby-grid .karta");
+    var cards = document.querySelectorAll(".sluzby-grid .karta, .kardio-grid .karta, .protazeni-grid .karta");
 
     cards.forEach(function(card) {
         card.addEventListener("click", function() {

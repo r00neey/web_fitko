@@ -380,54 +380,146 @@ nav ul li:first-child a:visited{
     background-position: center;
 }
 
-.sluzby-grid .nadpis{
+.sluzby-grid .nadpis, .kardio-grid .nadpis, .protazeni-grid .nadpis{
     padding: 2rem;
     font-size: 2rem;
 }
 
-.sluzby-grid .back{
+.sluzby-grid .back, .kardio-grid .back, .protazeni-grid .back{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.sluzby-grid .back .rozvrh-button{
+.sluzby-grid .back .rozvrh-button, .kardio-grid .back .rozvrh-button, .protazeni-grid .back .rozvrh-button{
     margin-top: auto;
     align-self: end;
     padding: 2em 3em;
 }
 
-.sluzby-grid .back .rozvrh-button button{
+.sluzby-grid .back .rozvrh-button button, .kardio-grid .back .rozvrh-button button, .protazeni-grid .back .rozvrh-button button{
     background-color: var(--color--secondary);
     color: white;
     border: none;
     border-radius: 5em;
-    padding: 1.5rem 6rem;
     cursor: pointer;
     display: flex;
     align-items: center;
+    gap: 2em;
+    justify-content: space-around;
+    padding: 1em 2em;
 }
 
-.sluzby-grid .back .rozvrh-button button img{
-    width: 24px;
-    height: 24px;
+.sluzby-grid .back .rozvrh-button button img, .kardio-grid .back .rozvrh-button button img, .protazeni-grid .back .rozvrh-button button img{
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 99em;
+    padding: 1em;
 }
 
-.sluzby-grid .nadpis-back{
+.rozvrh-button-text{
+    font-size: 1.5em;
+    padding: 1rem 0 1rem 1rem;
+    /*use font*/
+    font-family: 'Anton', sans-serif;
+}
+
+.sluzby-grid .nadpis-back, .kardio-grid .nadpis-back, .protazeni-grid .nadpis-back{
     padding: 1rem;
     font-size: 2em;
 }
 
-.sluzby-grid div{
+.sluzby-grid div, .kardio-grid div, .protazeni-grid div{
     border-radius: 4em;
 }
 
-.sluzby-grid div p{
+.sluzby-grid div p, .kardio-grid div p, .protazeni-grid div p{
     font-weight: normal;
     padding: 1rem;
     font-size: 1.25em;
+}
+
+.kardio-grid{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "hiit kardio-posilovani"
+    "tabata kardio-kruhac";
+    gap: 2em;
+}
+
+.kardio-grid .hiit{
+    grid-area: hiit;
+    background-image: url("../fotos02/hiit.jpg");
+    background-size: cover;
+}
+
+.kardio-grid .kardio-posilovani{
+    grid-area: kardio-posilovani;
+    background-image: url("../fotos02/kardio-posilovani.jpg");
+    background-size: cover;
+}
+
+.kardio-grid .tabata{
+    grid-area: tabata;
+    background-image: url("../fotos02/tabata.jpg");
+    background-size: cover;
+}
+
+.kardio-grid .kardio-kruhac{
+    grid-area: kardio-kruhac;
+    background-image: url("../fotos02/kardio-kruhac.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "ranni-protazeni ranni-valecka zdrava-zada"
+    "joga aktivni-senior sm-lana";
+    gap: 2em;
+}
+
+.protazeni-grid .ranni-protazeni{
+    grid-area: ranni-protazeni;
+    background-image: url("../fotos02/ranni-protazeni.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid .ranni-valecka{
+    grid-area: ranni-valecka;
+    background-image: url("../fotos02/ranni-valecka.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid .zdrava-zada{
+    grid-area: zdrava-zada;
+    background-image: url("../fotos02/zdrava-zada.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid .joga{
+    grid-area: joga;
+    background-image: url("../fotos02/joga.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid .aktivni-senior{
+    grid-area: aktivni-senior;
+    background-image: url("../fotos02/aktivni-senior.jpg");
+    background-size: cover;
+}
+
+.protazeni-grid .sm-lana{
+    grid-area: sm-lana;
+    background-image: url("../fotos02/sm-lana.jpg");
+    background-size: cover;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
