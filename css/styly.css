@@ -52,6 +52,7 @@ body{
 .text-bold{font-weight: 900;}
 .text-bigger{font-size: 1.125rem;}
 .padding-rl{padding: 0 0.5em 0 0.5em;}
+.no-decoration-red{text-decoration: none; color: red;}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  UVOD  */
@@ -838,7 +839,7 @@ nav ul li:first-child a:visited{
     "telefon . loga"
     "email footer-middle sumavan";
     padding: 2em 0;
-    gap: 0 1em
+    gap: 0 1em;
 }
 
 .footer-grid .adresa {
@@ -849,6 +850,11 @@ nav ul li:first-child a:visited{
     grid-area: telefon;
     display: flex;
     align-self: center;
+}
+
+.footer-grid .telefon a, .footer-grid .email a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-grid .email {
