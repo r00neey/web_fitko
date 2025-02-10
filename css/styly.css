@@ -124,7 +124,7 @@ nav ul li:first-child a:visited{
     background-color: var(--color--primary);
     color: var(--color--background);
     padding: 0.5em 1em;
-    width: 40vw;
+    width: 60vw;
 }
 
 
@@ -191,10 +191,10 @@ nav ul li:first-child a:visited{
 /*  01 - NECO MALO O NAS  */
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.o-nas .popis{
+.popis-sekce{
     line-height: 2em;
     font-size: 1.25em;
-    width: 50vw;
+    width: 80vw;
 }
 
 .o-nas .o-nas-grid{
@@ -306,6 +306,7 @@ nav ul li:first-child a:visited{
     color: black;
     transform: rotateY(180deg);
     padding: 1em;
+    overflow: scroll;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  02 -  NASE SLUZBY */
@@ -317,6 +318,7 @@ nav ul li:first-child a:visited{
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
+    font-size: 1.25em;
 }
 
 .nase-sluzby .nav li{
@@ -531,6 +533,7 @@ nav ul li:first-child a:visited{
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .cenik .grid-cenik {
+    padding: 2rem 0;
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 3fr;

@@ -98,82 +98,24 @@
 
     /* NASE SLUŽBY */
 
-    .nase-sluzby .nav li{
-        font-size: 2em;
-        padding: 2em 0;
-        color: gray;
-    }
-
-    .nase-sluzby .obrazky{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+    .sluzby-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
-        "img-1"
-        "img-2";
-        gap: 2em;
-    }   
-
-    .skupinove-lekce .card h3{
-        font-size: 1.5em;
+        "posilovna kruhovy-trenink"
+        "corefit-women pilates"
+        "pohybove-hry pohybove-hry";
     }
 
-    .skupinove-lekce .card-front{
-        overflow: hidden;
+    .protazeni-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "ranni-protazeni ranni-valecka"
+        "zdrava-zada joga"
+        "aktivni-senior sm-lana";
     }
-
-    .skupinove-lekce .card-back{
-        overflow: scroll;
-        background-color: white;
-        border-radius: 2em;
-    }
-
-    /* CENÍK */
-    .cenik .grid-cenik{
-        display: block;
-        padding: 1em 0;
-    }
-
-    .cenik .cenik-text{
-        display: block;
-    }
-
-    .cenik .obrazek-podpis{
-        align-items: center;
-    }
-
-    .cenik .cenik-text img{
-        max-width: 500px;
-        height: auto;
-        margin: 5em 0;
-    }
-
-    .nase-sluzby .obrazky{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "leva-karta"
-        "prava-karta";
-        gap: 2em;
-    }   
-
-    .nase-sluzby .obrazky .obrazky-card img{
-        border-radius: 2em;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-    }
-
-    .nase-sluzby .obrazky .obrazky-card .back-fotky-treneri{
-        flex-wrap: nowrap;
-    }
-
-    .nase-sluzby .obrazky .obrazky-card .back-fotky-treneri img{
-        object-position: top;
-        border-radius: 999em;
-        height: 100px;
-        width: 100px;
-    }
+    
 
 
     /* MUSI TU BYT? .cenik-tabulka .tabulka-grid ?*/

@@ -151,8 +151,27 @@
         justify-content: space-between;
     }
 
-    .skupinove-lekce .card h3{
-        font-size: 1.25em;
+    .sluzby-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "posilovna" 
+        "kruhovy-trenink"
+        "corefit-women"
+        "pilates"
+        "pohybove-hry";
+        min-height: 200vh;
+    }
+
+
+    .protazeni-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "ranni-protazeni ranni-valecka"
+        "zdrava-zada joga"
+        "aktivni-senior sm-lana";
+        max-height: 85vh;
     }
 
     /* CENÍK */
