@@ -469,6 +469,10 @@ nav ul li:first-child a:visited{
     background-size: cover;
 }
 
+.kardio-grid .tabata .back{
+    overflow: scroll;
+}
+
 .kardio-grid .kardio-kruhac{
     grid-area: kardio-kruhac;
     background-image: url("../fotos02/kardio-kruhac.jpg");
