@@ -5,6 +5,7 @@ html{scroll-behavior: smooth;}
     box-sizing: border-box;
     margin: 0;
     line-height: 1.5;
+    scrollbar-width: none; /*ASI DELALO BORDEL!!*/
 }
 
 :root{
