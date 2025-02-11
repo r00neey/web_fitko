@@ -107,6 +107,15 @@
         "pohybove-hry pohybove-hry";
     }
 
+    .kardio-grid, .protazeni-grid, .sluzby-grid{
+        min-height: 125vh;
+    }
+
+    .hiit, .kardio-posilovani, .tabata, .kardio-kruhac{
+        /*center background-image*/
+        background-position: center;
+    }
+
     .protazeni-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
