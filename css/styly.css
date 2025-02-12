@@ -760,7 +760,7 @@ nav ul li:first-child a:visited{
 
 .card .back p:first-of-type{
     font-size: 1.25em;
-    padding: 0 0 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .card .back p{
@@ -774,6 +774,7 @@ nav ul li:first-child a:visited{
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    margin-top: auto;
 }
 
 .card .back-spodek img{
@@ -800,7 +801,12 @@ nav ul li:first-child a:visited{
     display: flex;
     border-radius: 2em;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.back-jmeno-funkce{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
