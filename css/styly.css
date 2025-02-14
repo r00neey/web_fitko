@@ -401,10 +401,10 @@ nav ul li:first-child a:visited{
     padding: 2em 3em;
 }
 
-.sluzby-grid .back .rozvrh-button button, .kardio-grid .back .rozvrh-button button, .protazeni-grid .back .rozvrh-button button{
+.sluzby-grid .back .rozvrh-button a, .kardio-grid .back .rozvrh-button a, .protazeni-grid .back .rozvrh-button a{
     background-color: var(--color--secondary);
     color: white;
-    border: none;
+    text-decoration: none;
     border-radius: 5em;
     cursor: pointer;
     display: flex;
@@ -414,7 +414,7 @@ nav ul li:first-child a:visited{
     padding: 1em 2em;
 }
 
-.sluzby-grid .back .rozvrh-button button img, .kardio-grid .back .rozvrh-button button img, .protazeni-grid .back .rozvrh-button button img{
+.sluzby-grid .back .rozvrh-button a img, .kardio-grid .back .rozvrh-button a img, .protazeni-grid .back .rozvrh-button a img{
     width: 50px;
     height: 50px;
     background-color: white;
