@@ -1,6 +1,9 @@
 function toggle_divs() {
-    var elements = document.getElementsByClassName("hidden");
-    Array.prototype.forEach.call(elements, function(element) {
+    // Omez vyhledávání jen na sekci trenérů
+    var treneriSection = document.querySelector("#treneri");
+    var elements = treneriSection.querySelectorAll(".card.hidden");
+
+    elements.forEach(function(element) {
         if (element.style.display === "block") {
             element.style.display = "none";
         } else {
@@ -8,7 +11,7 @@ function toggle_divs() {
         }
     });
 
-    // Najít tlačítko a změnit jeho text
+    // Změna textu tlačítka
     var button = document.querySelector(".treneri-button");
     if (button.innerText === "DALŠÍ TRENÉŘI") {
         button.innerText = "MÉNĚ TRENÉRŮ";
